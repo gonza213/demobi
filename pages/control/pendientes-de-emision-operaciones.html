@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Norden Brokers - Asegurados</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../vendors/feather/feather.css">
+    <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="../../js/select.dataTables.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../images/favicon.png" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/76e0757c77.js" crossorigin="anonymous"></script>
+
+
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="../../images/MainLogo.png"
+                        class="mr-2" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../images/logo-mini.svg"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle mr-2" href="#" data-toggle="dropdown" id="profileDropdown">
+                            <i class="far fa-building"></i>Producción
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                            aria-labelledby="profileDropdown">
+                            <a class="dropdown-item">
+                                <i class="far fa-building text-primary"></i>
+                                Producción
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="far fa-money-bill-alt text-primary"></i>
+                                Cobranzas
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nav-profile dropdown ocultar">
+                        <a class="nav-link dropdown-toggle mr-2 ocultar" href="#" data-toggle="dropdown"
+                            id="profileDropdown">
+                            <i class="far fa-user-circle"></i>Demo
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                            aria-labelledby="profileDropdown">
+                            <a class="dropdown-item">
+                                <!-- <i class="far fa-building text-primary"></i> -->
+                                Opciones
+                            </a>
+                            <!-- <a href="#" class="dropdown-item">
+                            <i class="far fa-money-bill-alt text-primary"></i>
+                                  Cobranzas
+                          </a> -->
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                            <img src="../../images/user.png" alt="profile" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                            aria-labelledby="profileDropdown">
+                            <a class="dropdown-item">
+                                <i class="ti-settings text-primary"></i>
+                                Configuraciones
+                            </a>
+                            <a href="../../login.html" class="dropdown-item">
+                                <i class="ti-power-off text-primary"></i>
+                                Salir
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">
+                            <i class="fas fa-home menu-icon"></i>
+                            <span class="menu-title">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#btn-principal" aria-expanded="false"
+                            aria-controls="btn-principal">
+                            <i class="fas fa-diagnoses menu-icon"></i>
+                            <span class="menu-title">Principal</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="btn-principal">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="asegurados.html">Asegurados</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="operaciones.html">Operaciones</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="polizas.html">Pólizas</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="siniestros.html">Siniestros</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="vehiculos.html">Vehículos</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="presupuestos.html">Presupuestos <br>
+                                        Agro</a></li>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="presupuestos-automotor.html">Presupuestos <br> Automotor</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#btn-control" aria-expanded="false"
+                            aria-controls="btn-control">
+                            <i class="fas fa-chart-pie menu-icon"></i>
+                            <span class="menu-title">Control/Gestión</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="btn-control">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link"
+                                        href="../control/pendientes-de-emision.html">Pendientes de <br> Emisión</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="../control/polizas-a-renovar.html">Pólizas a <br> Renovar</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="../control/ordenes-de-renovacion.html">Ordenes de <br> renovación</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="../control/polizas-no-renovadas.html">Pólizas No <br> Renovadas</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="../control/endosos-con-aumento.html">Endosos con <br> aumento</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Renovaciones con <br> aumento</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Adelantos de <br> Cobertura (Agro)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#btn-cotizador" aria-expanded="false"
+                            aria-controls="btn-cotizador">
+                            <i class="fas fa-percentage menu-icon"></i>
+                            <span class="menu-title">Cotizadores</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="btn-cotizador">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Automotor</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Agro</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#btn-dashboard" aria-expanded="false"
+                            aria-controls="btn-dashboard">
+                            <i class="fas fa-th-large menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="btn-dashboard">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#">Tablero de control <br>
+                                        patrimoniales</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-file-invoice-dollar menu-icon"></i>
+                            <span class="menu-title">Reportes</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#test" aria-expanded="false"
+                            aria-controls="test">
+                            <i class="fas fa-vial menu-icon"></i>
+                            <span class="menu-title">Test</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="test">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="#"> Test </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> UI Demo
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-md-12 grid-margin">
+                            <div class="row">
+                                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                                    <h3 class="font-weight-bold text-negativo">Detalles de Operación </h3>
+                                    <h6 class="font-weight-normal mb-0 text-gris-positivo">Número 1011181</h6>
+                                </div>
+                                <div class="col-12 col-xl-4">
+                                    <div class="justify-content-end d-flex">
+                                        <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                                            <button class="btn btn-sm btn-light bg-white" type="button">
+                                                Solicitud de Emisión <i class="fas fa-print"></i>
+                                            </button>
+                                            <!-- <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button"
+                                                id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="mdi mdi-calendar"></i> Today (10 Jan 2021)
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right"
+                                                aria-labelledby="dropdownMenuDate2">
+                                                <a class="dropdown-item" href="#">January - March</a>
+                                                <a class="dropdown-item" href="#">March - June</a>
+                                                <a class="dropdown-item" href="#">June - August</a>
+                                                <a class="dropdown-item" href="#">August - November</a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <p class="card-title text-primary text-uppercase">Pre-Filtro de Asegurados</p> -->
+                                    <div class="row p-2">
+                                        <div class="col-md-6 p-2">
+                                            <span class="text-secondary">Cliente</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-6 p-2">
+                                            <span class="text-secondary">Aseguradora</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-6 p-2 ">
+                                            <span class="text-secondary">Organizador</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-6 p-2">
+
+                                        </div>
+                                        <div class="col-md-6 p-2">
+                                            <span class="text-secondary">Productor</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-6 p-2">
+                                            <span class="text-secondary">Vendedor</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Sección</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Moneda</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Nro. Póliza</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Inicio de vigencia operación</span>
+                                            <p class="mt-2"><input type="date" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Fin de vigencia operación</span>
+                                            <p class="mt-2"><input type="date" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Renueva A</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Inicio de vigencia póliza</span>
+                                            <p class="mt-2"><input type="date" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Fin de vigencia póliza</span>
+                                            <p class="mt-2"><input type="date" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Renovada por</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Tipo de orden</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Motivo endoso</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-4 p-2">
+                                            <span class="text-secondary">Campaña</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+
+                                        <div class="col-md-7 p-2 mx-auto">
+                                            <p class="text-center"> <span class="text-success">Ultimo Estado</span> •
+                                                <span class="text-success">Vigente</span> • <del>Facturada</del> •
+                                                <del>Inhabilitada</del>
+                                            </p>
+                                            <p class="text-center"><b>Fecha Alta:</b> 13/5/2020 <b class="ml-2">Fecha
+                                                    Modificación:</b> No disponible <b class="ml-2">Usuario:</b>
+                                                Barriga, Julia </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <p class="card-title text-primary text-uppercase">Pre-Filtro de Asegurados</p> -->
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir active" data-toggle="tab" href="#home" role="tab"
+                                                aria-controls="home" aria-selected="true">Principal</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="profile-tab" data-toggle="tab"
+                                                href="#profile" role="tab" aria-controls="profile"
+                                                aria-selected="false">Movimientos</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="contact-tab" data-toggle="tab"
+                                                href="#contact" role="tab" aria-controls="contact"
+                                                aria-selected="false">Ultimo
+                                                estado</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="premio-tab" data-toggle="tab" href="#premio"
+                                                role="tab" aria-controls="premio" aria-selected="false">Premio</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="pago-tab" data-toggle="tab" href="#pago"
+                                                role="tab" aria-controls="pago" aria-selected="false">Forma de pago</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="facturacion-tab" data-toggle="tab"
+                                                href="#facturacion" role="tab" aria-controls="facturacion"
+                                                aria-selected="false">Facturación</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="comision-tab" data-toggle="tab"
+                                                href="#comision" role="tab" aria-controls="comision"
+                                                aria-selected="false">Comisiones</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="segmentacion-tab" data-toggle="tab"
+                                                href="#segmentacion" role="tab" aria-controls="segmentacion"
+                                                aria-selected="false">Segmentación</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="observacion-tab" data-toggle="tab"
+                                                href="#observacion" role="tab" aria-controls="observacion"
+                                                aria-selected="false">Observaciones</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="transacciones-tab" data-toggle="tab"
+                                                href="#transacciones" role="tab" aria-controls="transacciones"
+                                                aria-selected="false">Transacciones</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link reducir" id="adjuntos-tab" data-toggle="tab"
+                                                href="#adjuntos" role="tab" aria-controls="adjuntos"
+                                                aria-selected="false">Adjuntos</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Código de solicitud</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Refacturación automática</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Tipo de renovación</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Tipo de IVA</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">País</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Provincia</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Localidad</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Tipo de domicilio</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-5 p-2">
+                                                    <span class="text-secondary">Calle</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-2 p-2">
+                                                    <span class="text-secondary">Número</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-2 p-2">
+                                                    <span class="text-secondary">Piso</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Departamento</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-9"></div>
+                                                <div class="col-md-4 p-2">
+                                                    <span class="text-secondary">Suma asegurada de póliza</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-4 p-2">
+                                                    <span class="text-secondary">Suma asegurada de operación</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-4 p-2">
+                                                    <span class="text-secondary">Saldo de operación</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-12 p-2">
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover " style="width:100%">
+                                                            <thead>
+                                                                <tr class="text-primary">
+                                                                    <th>Estado</th>
+                                                                    <th>Nro</th>
+                                                                    <th>Descripción</th>
+                                                                    <th>Cobertura</th>
+                                                                    <th>Suma asegurada</th>
+                                                                    <th>Inicio vigencia</th>
+                                                                    <th>Fin vigencia</th>
+                                                                    <th></th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="tr-pendiente-operacion" idForm="1">
+                                                                    <td><span class="text-success text-center"><i
+                                                                                class="fas fa-plus"></i></span></td>
+                                                                    <td>0001</td>
+                                                                    <td>TODO RIESGO DE CONSTRUCCIONE...</td>
+                                                                    <td>CONSTRUCCION Y MONTAJE</td>
+                                                                    <td>$40.000.000,00</td>
+                                                                    <td>18/05/2020 </td>
+                                                                    <td>18/11/2022
+                                                                    </td>
+                                                                    <td>
+                                                                        <a class="btn btn-primary btn-sm" href="#">
+                                                                            <i class="fas fa-info-circle"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="contact" role="tabpanel"
+                                            aria-labelledby="contact-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-12 p-2">
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover " style="width:100%">
+                                                            <thead>
+                                                                <tr class="text-primary">
+                                                                    <th>Estado</th>
+                                                                    <th>Nro</th>
+                                                                    <th>Descripción</th>
+                                                                    <th>Cobertura</th>
+                                                                    <th>Suma asegurada</th>
+                                                                    <th>Inicio vigencia</th>
+                                                                    <th>Fin vigencia</th>
+                                                                    <th></th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="tr-pendiente-operacion" idForm="1">
+                                                                    <td><span class="text-success text-center"><i
+                                                                                class="fas fa-plus"></i></span></td>
+                                                                    <td>0001</td>
+                                                                    <td>TODO RIESGO DE CONSTRUCCIONE...</td>
+                                                                    <td>CONSTRUCCION Y MONTAJE</td>
+                                                                    <td>$40.000.000,00</td>
+                                                                    <td>18/05/2020 </td>
+                                                                    <td>18/11/2022
+                                                                    </td>
+                                                                    <td>
+                                                                        <a class="btn btn-primary btn-sm" href="#">
+                                                                            <i class="fas fa-info-circle"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="premio" role="tabpanel"
+                                            aria-labelledby="premio-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Prima automática</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Prima manual</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Prima total</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 ml-2 p-2">
+                                                    <span class="text-secondary">Rec. financiero</span>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-0">
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 ml-2 p-2">
+                                                    <span class="text-secondary">Rec. administrativo</span>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-0">
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 ml-2 p-2">
+                                                    <span class="text-secondary">Derecho emisión</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Premio</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Ajuste de premio</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-6"></div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Premio neto</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">IVA</span>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-0">
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6"></div>
+                                                <div class="col-md-4 p-2">
+                                                    <span class="text-secondary">Premio Total</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pago" role="tabpanel" aria-labelledby="pago-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Medio de pago</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Forma de pago</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Banco</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Nro Cuenta/Tarjeta</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Vencimiento</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-3 p-2">
+                                                    <span class="text-secondary">Número de cuotas</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="facturacion" role="tabpanel"
+                                            aria-labelledby="facturacion-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">Nro de Póliza</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">Nro de Endoso</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">Nro de Referencia</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">Nro de Factura</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">Tipo de Cambio</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">Prima</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">remio</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">IVA</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-6 p-2">
+                                                            <span class="text-secondary">Costo</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row p-2">
+                                                        <div class="col-md-12 p-2">
+
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered " style="width:100%">
+                                                                    <thead>
+                                                                        <tr class="text-primary">
+                                                                            <th>Nro Cuota</th>
+                                                                            <th>Importe</th>
+                                                                            <th>Vencimiento</th>
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="tr-pendiente-facturacion" idForm="1">
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="comision" role="tabpanel"
+                                            aria-labelledby="comision-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-12 p-2">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered table-striped"
+                                                            style="width:100%">
+                                                            <thead>
+                                                                <tr class="text-dark">
+                                                                    <th>Principal</th>
+                                                                    <th>Tipo</th>
+                                                                    <th>Comisionista</th>
+                                                                    <th>% Comisión</th>
+                                                                    <th>Imp. Fijo</th>
+                                                                    <th>% Participación</th>
+                                                                    <th>Imp. Comisión</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="tr-pendiente-facturacion" idForm="1">
+                                                                    <td><i
+                                                                            class="fas fa-check text-success text-center"></i>
+                                                                    </td>
+                                                                    <td>Entrante</td>
+                                                                    <td>CIMINARI, FRANCISCO MARIA</td>
+                                                                    <td>20,00%</td>
+                                                                    <td>$0,00</td>
+                                                                    <td>0,00%</td>
+                                                                    <td>$13.200,00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-12 mt-2">
+                                                    <div class="row">
+                                                        <div class="col-md-3 p-2">
+                                                            <span class="text-secondary">Total Entrante</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-3 p-2">
+                                                            <span class="text-secondary">Total Saliente</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-3 p-2">
+                                                            <span class="text-secondary">Diferencia</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                        <div class="col-md-3 p-2">
+                                                            <span class="text-secondary">Total Externa</span>
+                                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="segmentacion" role="tabpanel"
+                                            aria-labelledby="segmentacion-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Empresa</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Sucursal</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Línea de negocio</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Gestor</span>
+                                                    <p class="mt-2"><input type="text" class="form-control"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="observacion" role="tabpanel"
+                                            aria-labelledby="observacion-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Observación de la aseguradora</span>
+                                                    <p class="mt-2"><textarea class="form-control" rows="5"></textarea>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Observación interna</span>
+                                                    <p class="mt-2"><textarea class="form-control" rows="5"></textarea>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Observación de orden</span>
+                                                    <p class="mt-2"><textarea class="form-control" rows="5"></textarea>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 p-2">
+                                                    <span class="text-secondary">Observación de póliza</span>
+                                                    <p class="mt-2"><textarea class="form-control" rows="5"></textarea>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="transacciones" role="tabpanel"
+                                            aria-labelledby="transacciones-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-12 p-2">
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered " style="width:100%">
+                                                            <thead>
+                                                                <tr class="text-primary">
+                                                                    <th>Fecha Proceso</th>
+                                                                    <th>Descripción</th>
+                                                                    <th>Medio de Despacho</th>
+                                                                    <th>Usuario</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="tr-pendiente-facturacion" idForm="1">
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-12 p-2">
+                                                    <button class="btn btn-primary float-right" data-toggle="modal"
+                                                        data-target="#exampleModal" type="button">Agregar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="adjuntos" role="tabpanel"
+                                            aria-labelledby="adjuntos-tab">
+                                            <div class="row p-2">
+                                                <div class="col-md-12 p-2">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered " style="width:100%">
+                                                            <thead>
+                                                                <tr class="text-primary">
+                                                                    <th>Tipo de adjunto</th>
+                                                                    <th>Nombre</th>
+                                                                    <th>Descripción</th>
+                                                                    <th>Fecha Alta</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="tr-pendiente-facturacion" idForm="1">
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">© 2021. Demo
+                            Brokers.
+                            Todos los Derechos Reservados.</span>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Transacción</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 p-2">
+                            <span class="text-secondary">Descripción</span>
+                            <p class="mt-2"><input type="text" class="form-control"></p>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <span class="text-secondary">Medio de Despacho</span>
+                            <p class="mt-2"><input type="text" class="form-control"></p>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <span class="text-secondary">Fecha de Proceso</span>
+                            <p class="mt-2"><input type="text" class="form-control"></p>
+                        </div>
+                        <div class="col-md-12 p-2">
+                            <span class="text-secondary">Texto</span>
+                            <p class="mt-2"><textarea class="form-control" rows="5"></textarea></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- plugins:js -->
+    <script src="../../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../../vendors/chart.js/Chart.min.js"></script>
+    <script src="../../vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="../../js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/template.js"></script>
+    <script src="../../js/settings.js"></script>
+    <script src="../../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../../js/dashboard.js"></script>
+    <script src="../../js/Chart.roundedBarCharts.js"></script>
+    <script src="../../js/button-tables.js"></script>
+    <!-- End custom js for this page-->
+
+    <script>
+        $(document).ready(function () {
+            $('#table_id').DataTable({
+                language: {
+                    url: "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json",
+                },
+            });
+        });
+    </script>
+
+</body>
+
+</html>

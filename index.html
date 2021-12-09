@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Norden Brokers - Inicio</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- <script>
+    $(document).ready(function () {
+      $("html").get(0).style.setProperty('--positivo', "#010B38");
+      $("html").get(0).style.setProperty('--negativo', "#009bdc");
+    });
+  </script> -->
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/76e0757c77.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/MainLogo.png" class="mr-2"
+            alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/MainLogo.png" alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle mr-2" href="#" data-toggle="dropdown" id="profileDropdown">
+              <i class="far fa-building"></i>Producción
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="far fa-building text-primary"></i>
+                Producción
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="far fa-money-bill-alt text-primary"></i>
+                Cobranzas
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item nav-profile dropdown ocultar">
+            <a class="nav-link dropdown-toggle mr-2 ocultar" href="#" data-toggle="dropdown" id="profileDropdown">
+              <i class="far fa-user-circle"></i>Demo
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <!-- <i class="far fa-building text-primary"></i> -->
+                Opciones
+              </a>
+              <!-- <a href="#" class="dropdown-item">
+                <i class="far fa-money-bill-alt text-primary"></i>
+                      Cobranzas
+              </a> -->
+            </div>
+          </li>
+
+
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="images/user.png" alt="profile" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Configuraciones
+              </a>
+              <a href="login.html" class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Salir
+              </a>
+            </div>
+          </li>
+
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home menu-icon"></i>
+              <span class="menu-title">Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#btn-principal" aria-expanded="false"
+              aria-controls="btn-principal">
+              <i class="fas fa-diagnoses menu-icon"></i>
+              <span class="menu-title">Principal</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="btn-principal">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/principal/asegurados.html">Asegurados</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/principal/operaciones.html">Operaciones</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/principal/polizas.html">Pólizas</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/principal/siniestros.html">Siniestros</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/principal/vehiculos.html">Vehículos</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/principal/presupuestos.html">Presupuestos <br>
+                    Agro</a></li>
+                <li class="nav-item"> <a class="nav-link"
+                    href="pages/principal/presupuestos-automotor.html">Presupuestos <br> Automotor</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#btn-control" aria-expanded="false"
+              aria-controls="btn-control">
+              <i class="fas fa-chart-pie menu-icon"></i>
+              <span class="menu-title">Control/Gestión</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="btn-control">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/control/pendientes-de-emision.html">Pendientes de
+                    <br> Emisión</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/control/ordenes-de-renovacion.html">Pólizas a <br>
+                    Renovar</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/control/ordenes-de-renovacion.html">Ordenes de <br>
+                    renovación</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/control/polizas-no-renovadas.html">Pólizas No <br>
+                    Renovadas</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/control/endosos-con-aumento.html">Endosos con <br>
+                    aumento</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Renovaciones con <br> aumento</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Adelantos de <br> Cobertura (Agro)</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#btn-cotizador" aria-expanded="false"
+              aria-controls="btn-cotizador">
+              <i class="fas fa-percentage menu-icon"></i>
+              <span class="menu-title">Cotizadores</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="btn-cotizador">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">Automotor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Agro</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#btn-dashboard" aria-expanded="false"
+              aria-controls="btn-dashboard">
+              <i class="fas fa-th-large menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="btn-dashboard">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">Tablero de control <br> patrimoniales</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-file-invoice-dollar menu-icon"></i>
+              <span class="menu-title">Reportes</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
+              <i class="fas fa-vial menu-icon"></i>
+              <span class="menu-title">Test</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#"> Test </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> UI Demo </a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold text-negativo">Bienvenido/a Oscar</h3>
+                  <h6 class="font-weight-normal mb-0 text-gris-positivo">a tu plataforma de <span
+                      class="text-primary">Norden Brokers</span></h6>
+                </div>
+                <div class="col-12 col-xl-4">
+                  <div class="justify-content-end d-flex">
+                    <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                      <!-- <button class="btn btn-sm btn-light bg-white" type="button">
+                        Descargar Excel
+                      </button> -->
+                      <button class="btn btn-sm btn-light bg-white dropdown-toggle" onclick="cambioColor()"
+                        type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                        <i class="mdi mdi-calendar"></i> Acciones
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
+                        <a class="dropdown-item" href="#">Nuevo</a>
+                        <a class="dropdown-item" href="#">Descargar Excel</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title text-primary">Últimos presupuestos automotor</p>
+                  <table class="table display responsive  expandable-table" id="table_id" style="width:100%">
+                    <thead>
+                      <tr>
+                        <th>Presupuesto</th>
+                        <th>Fecha de cotización</th>
+                        <th>Cliente</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="tr-inicio" idForm="1">
+                        <td>28187</td>
+                        <td>22/03/2021</td>
+                        <td>DONATI AUTOMOTORES S.R.L.</td>
+                        <td>FORD</td>
+                        <td>FOCUS L/14 2.0 5 P SE</td>
+                        <td>2015</td>
+                        <!-- <td>
+                          <a class="btn btn-primary btn-sm" href="pages/inicio/cotizador-auto.html">
+                            <i class="fas fa-info-circle"></i>
+                          </a>
+                        </td> -->
+                      </tr>
+                      <tr class="tr-inicio" idForm="2">
+                        <td>28187</td>
+                        <td>22/03/2021</td>
+                        <td>DONATI AUTOMOTORES S.R.L.</td>
+                        <td>FORD</td>
+                        <td>FOCUS L/14 2.0 5 P SE</td>
+                        <td>2015</td>
+                        <!-- <td>
+                          <a class="btn btn-primary btn-sm" href="pages/inicio/cotizador-auto.html">
+                            <i class="fas fa-info-circle"></i>
+                          </a>
+                        </td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">© 2021. Norden Brokers.
+              Todos los Derechos Reservados.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <script src="js/button-tables.js"></script>
+  <!-- End custom js for this page-->
+
+  <script>
+    $(document).ready(function () {
+      $('#table_id').DataTable({
+        language: {
+          url: "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json",
+        },
+      });
+    });
+  </script>
+
+
+
+  <script>
+
+
+  </script>
+</body>
+
+</html>
