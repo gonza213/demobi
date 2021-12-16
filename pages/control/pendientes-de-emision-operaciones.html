@@ -350,7 +350,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <!-- <p class="card-title text-primary text-uppercase">Pre-Filtro de Asegurados</p> -->
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <ul class="nav nav-tabs w-100" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
                                             <a class="nav-link reducir active" data-toggle="tab" href="#home" role="tab"
                                                 aria-controls="home" aria-selected="true">Principal</a>
@@ -475,47 +475,43 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        <div class="tab-pane fade w-100" id="profile" role="tabpanel"
                                             aria-labelledby="profile-tab">
                                             <div class="row p-2">
-                                                <div class="col-md-12 p-2">
+                                                <div class="col-md-12">
 
-                                                    <div class="table-responsive">
-                                                        <table class="table table-hover " style="width:100%">
-                                                            <thead>
-                                                                <tr class="text-primary">
-                                                                    <th>Estado</th>
-                                                                    <th>Nro</th>
-                                                                    <th>Descripción</th>
-                                                                    <th>Cobertura</th>
-                                                                    <th>Suma asegurada</th>
-                                                                    <th>Inicio vigencia</th>
-                                                                    <th>Fin vigencia</th>
-                                                                    <th></th>
+                                                    <table class="table table-responsive-sm table-bordered table-striped w-100">
+                                                        <thead>
+                                                            <tr class="text-primary" >
+                                                                <th>Estado</th>
+                                                                <th>Nro</th>
+                                                                <th>Descripción</th>
+                                                                <th>Cobertura</th>
+                                                                <th>Suma asegurada</th>
+                                                                <th>Inicio vigencia</th>
+                                                                <th>Fin vigencia</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="table-tr">
+                                                                <td class="text-center"><span class="text-success text-center"><i
+                                                                            class="fas fa-plus"></i></span></td>
+                                                                <td>0001</td>
+                                                                <td>TODO RIESGO DE CONSTRUCCIONE...</td>
+                                                                <td>CONSTRUCCION Y MONTAJE</td>
+                                                                <td>$40.000.000,00</td>
+                                                                <td>18/05/2020 </td>
+                                                                <td>18/11/2022
+                                                                </td>
+                                                                <td>
+                                                                    <a class="btn btn-primary btn-sm fas fa-info-circle" href="#">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
 
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="tr-pendiente-operacion" idForm="1">
-                                                                    <td><span class="text-success text-center"><i
-                                                                                class="fas fa-plus"></i></span></td>
-                                                                    <td>0001</td>
-                                                                    <td>TODO RIESGO DE CONSTRUCCIONE...</td>
-                                                                    <td>CONSTRUCCION Y MONTAJE</td>
-                                                                    <td>$40.000.000,00</td>
-                                                                    <td>18/05/2020 </td>
-                                                                    <td>18/11/2022
-                                                                    </td>
-                                                                    <td>
-                                                                        <a class="btn btn-primary btn-sm" href="#">
-                                                                            <i class="fas fa-info-circle"></i>
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
 
                                                 </div>
                                             </div>
@@ -524,10 +520,9 @@
                                         <div class="tab-pane fade" id="contact" role="tabpanel"
                                             aria-labelledby="contact-tab">
                                             <div class="row p-2">
-                                                <div class="col-md-12 p-2">
 
-                                                    <div class="table-responsive">
-                                                        <table class="table table-hover " style="width:100%">
+                                                    <div class="col-md-12">
+                                                        <table class="table table-responsive-sm  table-bordered table-striped w-100" >
                                                             <thead>
                                                                 <tr class="text-primary">
                                                                     <th>Estado</th>
@@ -542,8 +537,8 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="tr-pendiente-operacion" idForm="1">
-                                                                    <td><span class="text-success text-center"><i
+                                                                <tr class="table-tr" idForm="1">
+                                                                    <td class="text-center"><span class="text-success text-center"><i
                                                                                 class="fas fa-plus"></i></span></td>
                                                                     <td>0001</td>
                                                                     <td>TODO RIESGO DE CONSTRUCCIONE...</td>
@@ -553,8 +548,7 @@
                                                                     <td>18/11/2022
                                                                     </td>
                                                                     <td>
-                                                                        <a class="btn btn-primary btn-sm" href="#">
-                                                                            <i class="fas fa-info-circle"></i>
+                                                                        <a class="btn btn-primary btn-sm fas fa-info-circle" href="#">
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -562,9 +556,8 @@
                                                             </tbody>
                                                         </table>
                                                     </div>
-
-                                                </div>
-                                            </div>
+                                     
+                                         </div>
                                         </div>
                                         <div class="tab-pane fade" id="premio" role="tabpanel"
                                             aria-labelledby="premio-tab">
@@ -714,10 +707,9 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="row p-2">
-                                                        <div class="col-md-12 p-2">
-
-                                                            <div class="table-responsive">
-                                                                <table class="table table-bordered " style="width:100%">
+                                                        <div class="col-md-12">
+                                                
+                                                                <table class="table table-responsive-sm table-bordered table-striped w-100">
                                                                     <thead>
                                                                         <tr class="text-primary">
                                                                             <th>Nro Cuota</th>
@@ -727,7 +719,7 @@
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr class="tr-pendiente-facturacion" idForm="1">
+                                                                        <tr class="table-tr" idForm="1">
                                                                             <td></td>
                                                                             <td></td>
                                                                             <td></td>
@@ -736,8 +728,7 @@
 
                                                                     </tbody>
                                                                 </table>
-                                                            </div>
-
+                                                        
                                                         </div>
                                                     </div>
                                                 </div>
@@ -746,12 +737,12 @@
                                         <div class="tab-pane fade" id="comision" role="tabpanel"
                                             aria-labelledby="comision-tab">
                                             <div class="row p-2">
-                                                <div class="col-md-12 p-2">
-                                                    <div class="table-responsive">
-                                                        <table class="table table-bordered table-striped"
-                                                            style="width:100%">
+                                                <div class="col-md-12">
+                                                    
+                                                        <table class="table table-responsive-sm  table-bordered table-striped w-100"
+                                                            >
                                                             <thead>
-                                                                <tr class="text-dark">
+                                                                <tr class="text-primary">
                                                                     <th>Principal</th>
                                                                     <th>Tipo</th>
                                                                     <th>Comisionista</th>
@@ -763,7 +754,7 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr class="tr-pendiente-facturacion" idForm="1">
-                                                                    <td><i
+                                                                    <td class="text-center"><i
                                                                             class="fas fa-check text-success text-center"></i>
                                                                     </td>
                                                                     <td>Entrante</td>
@@ -775,7 +766,7 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                    </div>
+                                                   
 
                                                 </div>
                                                 <div class="col-md-12 mt-2">
@@ -851,8 +842,8 @@
                                             <div class="row p-2">
                                                 <div class="col-md-12 p-2">
 
-                                                    <div class="table-responsive">
-                                                        <table class="table table-bordered " style="width:100%">
+                                                 
+                                                        <table class="table table-responsive-sm table-bordered table-striped w-100">
                                                             <thead>
                                                                 <tr class="text-primary">
                                                                     <th>Fecha Proceso</th>
@@ -862,7 +853,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="tr-pendiente-facturacion" idForm="1">
+                                                                <tr class="table-tr" idForm="1">
                                                                     <td></td>
                                                                     <td></td>
                                                                     <td></td>
@@ -871,7 +862,7 @@
 
                                                             </tbody>
                                                         </table>
-                                                    </div>
+                                                 
 
                                                 </div>
                                                 <div class="col-md-12 p-2">
@@ -883,9 +874,9 @@
                                         <div class="tab-pane fade" id="adjuntos" role="tabpanel"
                                             aria-labelledby="adjuntos-tab">
                                             <div class="row p-2">
-                                                <div class="col-md-12 p-2">
-                                                    <div class="table-responsive">
-                                                        <table class="table table-bordered " style="width:100%">
+                                                <div class="col-md-12">
+                                                  
+                                                        <table class="table table-responsive-sm table-bordered table-striped w-100">
                                                             <thead>
                                                                 <tr class="text-primary">
                                                                     <th>Tipo de adjunto</th>
@@ -895,7 +886,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="tr-pendiente-facturacion" idForm="1">
+                                                                <tr class="table-tr" idForm="1">
                                                                     <td></td>
                                                                     <td></td>
                                                                     <td></td>
@@ -904,9 +895,9 @@
 
                                                             </tbody>
                                                         </table>
-                                                    </div>
+                                                   
                                                 </div>
-                                            
+
                                             </div>
                                         </div>
                                     </div>
@@ -938,7 +929,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Transacción</h5>
@@ -948,15 +939,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-4 p-2">
+                        <div class="col-md-6 p-2">
                             <span class="text-secondary">Descripción</span>
                             <p class="mt-2"><input type="text" class="form-control"></p>
                         </div>
-                        <div class="col-md-4 p-2">
+                        <div class="col-md-6 p-2">
                             <span class="text-secondary">Medio de Despacho</span>
                             <p class="mt-2"><input type="text" class="form-control"></p>
                         </div>
-                        <div class="col-md-4 p-2">
+                        <div class="col-md-6 p-2">
                             <span class="text-secondary">Fecha de Proceso</span>
                             <p class="mt-2"><input type="text" class="form-control"></p>
                         </div>

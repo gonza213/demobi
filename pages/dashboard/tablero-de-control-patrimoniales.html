@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Norden Brokers - Presupuestos Agrícola</title>
+    <title>Norden Brokers - Asegurados</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../vendors/feather/feather.css">
     <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
@@ -224,15 +224,13 @@
                         <div class="col-md-12 grid-margin">
                             <div class="row">
                                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                                    <h3 class="font-weight-bold text-negativo">Consulta de Asegurados</h3>
-                                    <!-- <h6 class="font-weight-normal mb-0">Consulta de Vehiculos</h6> -->
+                                    <h3 class="font-weight-bold text-negativo">Dashboard - Tablero de Control -
+                                        Patrimoniales</h3>
+                                    <!-- <h6 class="font-weight-normal mb-0 text-gris-positivo">Consulta de Asegurados</h6> -->
                                 </div>
                                 <div class="col-12 col-xl-4">
                                     <div class="justify-content-end d-flex">
                                         <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                                            <button class="btn btn-sm btn-light bg-white" type="button">
-                                                Descargar Excel
-                                            </button>
 
                                         </div>
                                     </div>
@@ -245,26 +243,109 @@
                         <div class="col-md-12 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <!-- <p class="card-title text-primary">Ultimos presupuestos automotor</p>      -->
-                                    <table class="table display responsive  expandable-table" id="table_id"
-                                        style="width:100%">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre y Apellido/Razón Social</th>
-                                                <th>Número de documento</th>
-                                                <th>Teléfono</th>
-                                                <th>Correo electrónico</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="tr-asegurados" idForm="1">
-                                                <td>AIPAA AGENCIA DE INVESTIGACIONES PRIVADAS</td>
-                                                <td>30517232269</td>
-                                                <td>5555555</td>
-                                                <td>info@norden.com.ar</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <p class="card-title text-primary text-uppercase">Parámetros del Reporte</p>
+                                    <div class="row p-2">
+                                        <div class="col-md-3 p-2">
+                                            <span class="text-secondary">Fecha Desde</span>
+                                            <p class="mt-2"><input type="date" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-3 p-2">
+                                            <span class="text-secondary">Fecha Hasta</span>
+                                            <p class="mt-2"><input type="date" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-3 p-2">
+                                            <span class="text-secondary">Productor</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-3 p-2">
+                                            <span class="text-secondary">Vendedor</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-6 p-2">
+                                            <span class="text-secondary">Aseguradora</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-6 p-2">
+                                            <span class="text-secondary">Sección</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-6 p-2">
+                                            <span class="text-secondary">Moneda</span>
+                                            <p class="mt-2">
+                                                <select name="" class="form-control">
+                                                    <option value="PESOS">PESOS</option>
+                                                    <option value="DOLAR">DOLAR ESTADOSUNIDENSE</option>
+                                                    <option value="EURO">EURO</option>
+                                                </select>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 p-2">
+                                            <span class="text-secondary">Sucursal</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-3 p-2">
+                                            <span class="text-secondary">Linea de negocio</span>
+                                            <p class="mt-2"><input type="text" class="form-control"></p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a href="consulta-asegurados.html"
+                                                class="btn btn-success float-right">Recargar Dashboard</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="d-flex justify-content-between">
+                                                <p class="card-title">Prima por Mes/Año</p>
+                                                <button type="button" class="btn btn-success btn-sm">
+                                                    <i class="far fa-file-excel"></i> Exportar Datos
+                                                </button>
+                                            </div>
+                                            <!-- <p class="font-weight-500">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p> -->
+                                            <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
+                                            <canvas id="sales-chart"></canvas>
+                                        </div>
+                                        <div class="col-md-12 mt-5 mb-3">
+                                            <table class="table table-responsive-sm table-bordered table-striped w-100">
+                                                <thead>
+                                                    <tr class="bg-primary text-white">
+                                                        <th>Estado</th>
+                                                        <th>Prima actual</th>
+                                                        <th>Prima anterior</th>
+                                                        <th>Crecimiento - Decrecimiento</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>July 2021</td>
+                                                        <td>0</td>
+                                                        <td>8.478.377,05</td>
+                                                        <td>-100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>August 2021</td>
+                                                        <td>0</td>
+                                                        <td>8.478.377,05</td>
+                                                        <td>-100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>September 2021</td>
+                                                        <td>0</td>
+                                                        <td>8.478.377,05</td>
+                                                        <td>-100</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -276,7 +357,7 @@
                 <!-- partial:partials/_footer.html -->
                 <footer class="footer">
                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">© 2021. Norden
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">© 2021. Demo
                             Brokers.
                             Todos los Derechos Reservados.</span>
                     </div>
@@ -291,9 +372,6 @@
 
     <!-- plugins:js -->
     <script src="../../vendors/js/vendor.bundle.base.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <script src="../../vendors/chart.js/Chart.min.js"></script>
@@ -313,7 +391,6 @@
     <!-- Custom js for this page-->
     <script src="../../js/dashboard.js"></script>
     <script src="../../js/Chart.roundedBarCharts.js"></script>
-    <script src="../../js/button-tables.js"></script>
     <!-- End custom js for this page-->
 
     <script>

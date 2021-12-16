@@ -182,16 +182,16 @@
       var SalesChart = new Chart(SalesChartCanvas, {
         type: 'bar',
         data: {
-          labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+          labels: ["Prima por Mes/Año"],
           datasets: [{
-              label: 'Offline Sales',
-              data: [480, 230, 470, 210, 330],
-              backgroundColor: '#98BDFF'
+              label: 'Actual',
+              data: [480000000],
+              backgroundColor: '#009bdc'
             },
             {
-              label: 'Online Sales',
-              data: [400, 340, 550, 480, 170],
-              backgroundColor: '#4B49AC'
+              label: 'Anterior',
+              data: [400000000],
+              backgroundColor: '#010B38'
             }
           ]
         },
@@ -218,7 +218,7 @@
               ticks: {
                 display: true,
                 min: 0,
-                max: 560,
+                max: 700000000,
                 callback: function(value, index, values) {
                   return  value + '$' ;
                 },
