@@ -298,54 +298,78 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 grid-margin stretch-card">
-                            <div class="card">
+
+                            <div class="card alert alert-dismissible fade show" role="alert">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="d-flex justify-content-between">
-                                                <p class="card-title">Prima por Mes/Año</p>
-                                                <button type="button" class="btn btn-success btn-sm">
-                                                    <i class="far fa-file-excel"></i> Exportar Datos
-                                                </button>
+                                            <div class="d-flex justify-content-between row">
+                                                <p class="card-title text-uppercase text-primary col-md-12">Prima por
+                                                    Mes/Año
+                                                    <button type="button"
+                                                        class="btn btn-primary btn-sm float-right ml-1"
+                                                        data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true" class="fas fa-times">
+                                                        </span>
+                                                    </button>
+                                                    <button class="btn btn-primary btn-sm float-right" type="button"
+                                                        data-toggle="collapse" data-target="#multiCollapseExample2"
+                                                        aria-expanded="true" aria-controls="multiCollapseExample2">
+                                                        <span class="fas fa-minus">
+                                                        </span>
+                                                    </button>
+                                                </p>
+
                                             </div>
                                             <!-- <p class="font-weight-500">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p> -->
-                                            <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
-                                            <canvas id="sales-chart"></canvas>
-                                        </div>
-                                        <div class="col-md-12 mt-5 mb-3">
-                                            <table class="table table-responsive-sm table-bordered table-striped w-100">
-                                                <thead>
-                                                    <tr class="bg-primary text-white">
-                                                        <th>Estado</th>
-                                                        <th>Prima actual</th>
-                                                        <th>Prima anterior</th>
-                                                        <th>Crecimiento - Decrecimiento</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>July 2021</td>
-                                                        <td>0</td>
-                                                        <td>8.478.377,05</td>
-                                                        <td>-100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>August 2021</td>
-                                                        <td>0</td>
-                                                        <td>8.478.377,05</td>
-                                                        <td>-100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>September 2021</td>
-                                                        <td>0</td>
-                                                        <td>8.478.377,05</td>
-                                                        <td>-100</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
 
+                                            <div class="col-md-12 mb-3 collapse multi-collapse show"
+                                                id="multiCollapseExample2">
+                                                <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
+                                                <canvas id="sales-chart"></canvas>
+
+                                                <table class="table mt-5 table-responsive-sm table-bordered table-striped w-100">
+                                                    <thead>
+                                                        <tr class="bg-primary text-white">
+                                                            <th>Estado</th>
+                                                            <th>Prima actual</th>
+                                                            <th>Prima anterior</th>
+                                                            <th>Crecimiento - Decrecimiento</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>July 2021</td>
+                                                            <td>0</td>
+                                                            <td>8.478.377,05</td>
+                                                            <td>-100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>August 2021</td>
+                                                            <td>0</td>
+                                                            <td>8.478.377,05</td>
+                                                            <td>-100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>September 2021</td>
+                                                            <td>0</td>
+                                                            <td>8.478.377,05</td>
+                                                            <td>-100</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="col-md-12 mt-4">
+                                                    <button type="button" class="btn btn-success float-right">
+                                                        <span class="far fa-file-excel"></span> Exportar Datos
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>

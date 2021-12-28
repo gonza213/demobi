@@ -10167,12 +10167,12 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #CED4DA;
+  border: 1px solid #e0e0e0;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #CED4DA;
+  border: 1px solid #e0e0e0;
 }
 
 .table-bordered thead th,
@@ -19082,7 +19082,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid var(--positivo) !important;
   }
   .table-dark {
     color: inherit;
