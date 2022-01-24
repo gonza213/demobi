@@ -20,6 +20,7 @@
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="css/vertical-layout-light/custom.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -34,41 +35,7 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/76e0757c77.js" crossorigin="anonymous"></script>
 
-    <style>
-        .header-border {
-            height: 160px;
-            border-bottom: 2px solid var(--negativo);
-        }
 
-        .img-header {
-            width: 300px;
-            display: block;
-            margin: auto;
-        }
-
-        .td-border {
-            border: none !important;
-            background: var(--gris-positivo);
-        }
-
-        td,
-        th {
-            height: 40px !important;
-            font-size: 18px !important;
-        }
-
-        .card {
-            border: none !important;
-        }
-
-        .text-secondary {
-            color: var(--gris-positivo) !important;
-        }
-
-        li {
-            font-size: 17px !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -92,48 +59,36 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-4">
-                    <h2>Estimado BERTALOT, JUAN SEBASTIAN</h2>
-                    <h5>Nos dirigimos a Ud. con la finalidad de informarle vuestra cotización para el seguro de su
-                        vehículo.</h5>
+                    <h3>Estimado BERTALOT, JUAN SEBASTIAN</h3>
+                    <h4>Nos dirigimos a Ud. con la finalidad de informarle vuestra cotización para el seguro de su
+                        vehículo.</h4>
                     <table class="table mt-4">
                         <tbody>
                             <tr>
                                 <td class="border bg-primary text-white">Productor/Vendedor</td>
-                                <td class="text-white td-border">NORDEN BROKERS S.A.
+                                <td class="text-white td-border td-ancho">NORDEN BROKERS S.A.
                                 </td>
-                                <td class="border bg-primary text-white">Fecha de nacimiento</td>
-                                <td class="text-white td-border">09/04/2021</td>
+                                <td class="border bg-primary text-white">Provincia</td>
+                                <td class="text-white td-border">Buenos Aires</td>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="border bg-primary text-white">Marca</td>
-                                <td class=" text-white td-border">CHEVROLET</td>
-                                <td class="border bg-primary text-white">Estado civil</td>
-                                <td class=" text-white td-border">CASADO</td>
+                                <td class=" text-white td-border td-ancho">CHEVROLET</td>
+                                <td class="border bg-primary text-white">Código postal</td>
+                                <td class="text-white td-border">1602 - FLORIDA</td>
                             </tr>
                             <tr>
                                 <td class="border bg-primary text-white">Modelo</td>
-                                <td class="text-white td-border">ONIX 1.4 JOY BLACK L/19 </td>
-                                <td class="border bg-primary text-white">Código Infoauto</td>
-                                <td class="text-white td-border">120567
+                                <td class="text-white td-border td-ancho">ONIX 1.4 JOY BLACK L/19 </td>
+                                <td class="border bg-primary text-white">Forma de pago</td>
+                                <td class="text-white td-border">Tarjeta de crédito
+                                </td>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="border bg-primary text-white">Año</td>
-                                <td class="text-white td-border">2020</td>
-                                <td class="border bg-primary text-white">Forma de pago</td>
-                                <td class="text-white td-border">Tarjeta de crédito
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border bg-primary text-white">Provincia</td>
-                                <td class="text-white td-border">Buenos Aires</td>
-                                <td class="border bg-primary text-white">Tipo de refacturación</td>
-                                <td class="text-white td-border">Mensual
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border bg-primary text-white">Código postal</td>
-                                <td class="text-white td-border">1602 - FLORIDA</td>
+                                <td class="text-white td-border td-ancho">2020</td>
                                 <td class="border bg-primary text-white">Tipo IVA</td>
                                 <td class="text-white td-border">CONSUMIDOR FINAL
                                 </td>
@@ -156,11 +111,11 @@
                             <h4 class="text-center p-2">Suma asegurada: $ 1.496.200</h4>
                         </div>
                         <div class="col-md-12 mt-3">
-                            <table class="table">
+                            <!-- <table class="table">
                                 <thead>
                                     <tr class="bg-primary text-white">
-                                        <th>Cobertura</th>
-                                        <th class="text-right">Costo</th>
+                                        <th class="th-first">Cobertura</th>
+                                        <th class="text-right th-last">Costo</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -176,7 +131,10 @@
                                     </tr>
 
                                 </tbody>
-                            </table>
+                            </table> -->
+                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span class="float-right">Costo</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">RC6 C/X, SSN <span class="float-right">$3.507,72</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">TS1 C/X<span class="float-right">$4.688,61</span></h4>
                         </div>
                     </div>
                 </div>
@@ -196,27 +154,9 @@
                             </h4>
                         </div>
                         <div class="col-md-12 mt-3">
-                            <table class="table">
-                                <thead>
-                                    <tr class="bg-primary text-white">
-                                        <th>Cobertura</th>
-                                        <th class="text-right">Costo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>AUTOMAX 1 – RESPONSABILIDAD CIVIL </td>
-                                        <td class="text-right">$2.221,00
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>TODO RIESGO 14 (FRANQUICIA $ 30.000.-)</td>
-                                        <td class="text-right">$10.238,00
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span class="float-right">Costo</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">AUTOMAX 1 – RESPONSABILIDAD CIVIL <span class="float-right">$2.221,00</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">TODO RIESGO 14 (FRANQUICIA $ 30.000.-)<span class="float-right">$10.238,00</span></h4>
                         </div>
                     </div>
                 </div>
@@ -235,27 +175,9 @@
                             <h4 class="text-center p-2">Suma asegurada: $ 1.425.000</h4>
                         </div>
                         <div class="col-md-12 mt-3">
-                            <table class="table">
-                                <thead>
-                                    <tr class="bg-primary text-white">
-                                        <th>Cobertura</th>
-                                        <th class="text-right">Costo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Resp.Civil-Robo/Incendio Total </td>
-                                        <td class="text-right">$756,24
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Resp.Civil-Robo/Incendio Total y Parcial-Danos Totales por Accidente</td>
-                                        <td class="text-right">$1.000,64
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span class="float-right">Costo</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">Resp.Civil-Robo/Incendio Total  <span class="float-right">$756,24</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">Resp.Civil-Robo/Incendio Total y Parcial-Danos Totales por Accidente<span class="float-right">$1.000,64</span></h4>
                         </div>
                     </div>
                 </div>
@@ -267,6 +189,7 @@
                 <p class="text-center mt-4">Página 1 de 5</p>
             </footer>
         </div>
+        <!-- FIN PAG 1 -->
 
         <!-- PAG 2 -->
         <div class="card mx-auto mt-3" style="height: 1780px">
@@ -283,9 +206,9 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-4">
-                    <img src="images/logo-smg.svg" style="width: 250px">
+                    <img src="images/logo-smg.svg" class="ml-3" style="width: 250px">
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3">RC6 C/X, SSN</h4>
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">RC6 C/X, SSN</h4>
                         <h4 class="mt-2 p-2">Responsabilidad Civil</h4>
                         <h4 class="mt-2 p-2">Remolque: 300 km totales</h4>
                         <h4 class="mt-2 p-2">Asistencia Mecánica: 1 servicios mes / 6 servicios año</h4>
@@ -305,7 +228,7 @@
                         <h4 class="mt-2 p-2">SMG 0 Km: Bonificación 20% escalonada (por antigüedad en Cía.)</h4>
                     </div>
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-4">TS1 C/X</h4>
+                        <h4 class="bg-primary text-white p-3 mt-4 radius">TS1 C/X</h4>
                         <h4 class="mt-2 p-2">Responsabilidad Civil Robo Total Incendio Total Remolque y Asistencia
                             Mecánica (Sujeto a antigüedad vehículo)
                             Inforuta Asistencia Integral en caso de Siniestro Gastos de Gestoría por Baja del Vehículo
@@ -330,6 +253,7 @@
                 <p class="text-center mt-4">Página 2 de 5</p>
             </footer>
         </div>
+        <!-- FIN PAG 2 -->
 
         <!-- PAG 3 -->
         <div class="card mx-auto mt-3" style="height: 1780px">
@@ -346,9 +270,9 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-4">
-                    <img src="images/Sancor.png" style="width: 250px">
+                    <img src="images/Sancor.png" class="ml-3" style="width: 250px">
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3">AUTOMAX 1 – RESPONSABILIDAD CIVIL</h4>
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">AUTOMAX 1 – RESPONSABILIDAD CIVIL</h4>
                         <h4 class="mt-2 p-2"><span class="text-secondary">* Responsabilidad civil:</span> cobertura por
                             reclamos a consecuencia de daños
                             causados
@@ -357,7 +281,7 @@
                         <h4 class="mt-2 p-2">Esta cobertura Excluye Asistencia a las Personas y al Vehículo.</h4>
                     </div>
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-4">TODO RIESGO 14 (FRANQUICIA $ 30.000.-)</h4>
+                        <h4 class="bg-primary text-white p-3 mt-4 radius">TODO RIESGO 14 (FRANQUICIA $ 30.000.-)</h4>
                         <h4 class="mt-2 p-2"><span class="text-secondary">* Responsabilidad civil:</span> cobertura por
                             reclamos a consecuencia de daños
                             causados por el vehículo a cosas de terceros o
@@ -378,13 +302,13 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-5">
-                    <img src="images/sura.jpg" style="width: 250px">
+                    <img src="images/sura.jpg" class="ml-3" style="width: 250px">
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3">Resp.Civil-Robo/Incendio Total
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total
                         </h4>
                     </div>
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3">Resp.Civil-Robo/Incendio Total y Parcial-Danos
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total y Parcial-Danos
                             Totales por Accidente</h4>
                     </div>
                 </div>
@@ -396,6 +320,7 @@
                 <p class="text-center mt-4">Página 3 de 5</p>
             </footer>
         </div>
+        <!-- FIN PAG 3 -->
 
         <!-- PAG 4 -->
         <div class="card mx-auto mt-3" style="height: 1780px">
@@ -412,7 +337,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-5">
-                    <img src="images/Sancor.png" style="width: 200px">
+                    <img src="images/Sancor.png" class="ml-3" style="width: 200px">
                     <br>
                     <div class="col-md-12">
                         <h4 class="text-center mt-5">Beneficios Adicionales y Consideraciones</h4>
@@ -515,8 +440,9 @@
                 <p class="text-center mt-4">Página 4 de 5</p>
             </footer>
         </div>
+        <!-- FIN PAG 4 -->
 
-        <!-- PAG 4 -->
+        <!-- PAG 5-->
         <div class="card mx-auto mt-3" style="height: 1780px">
             <div class="card-body">
                 <div class="col-md-12 header-border">
@@ -577,7 +503,8 @@
                             formen o no parte del equipo original de fábrica, no se
                             encuentran cubiertos en ninguna de las opciones. Solo al amparo del robo/hurto total.
                         </h5>
-                        <h4 class="mt-4"><u>IMPORTANTE:</u> El importe presupuestado es correspondiente a la 1* cuota, pudiendo
+                        <h4 class="mt-4"><u>IMPORTANTE:</u> El importe presupuestado es correspondiente a la 1* cuota,
+                            pudiendo
                             variar en las próximas
                             facturaciones por: 1) Aumento de Tarifa en la aseguradora, 2) Actualización de la suma
                             asegurada – valor- del
@@ -597,6 +524,7 @@
                 <p class="text-center mt-4">Página 5 de 5</p>
             </footer>
         </div>
+        <!-- FIN PAG 5 -->
     </div>
     <!-- container-scroller -->
 
@@ -639,8 +567,6 @@
 
         function genPDF() {
 
-
-
             html2canvas($('#testdiv'), {
                 onrendered: function (canvas) {
 
@@ -649,7 +575,7 @@
                     var pageHeight = 295;
                     var imgHeight = canvas.height * imgWidth / canvas.width;
                     var heightLeft = imgHeight;
-                    var doc = new jsPDF('p', 'mm');
+                    var doc = new jsPDF('p', 'mm', 'a4');
                     var position = 0;
 
                     doc.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
@@ -661,15 +587,14 @@
                         doc.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
                         heightLeft -= pageHeight;
                     }
-                    doc.save('file.pdf');
-
-
+                    doc.save('presupuesto-1.pdf');
 
                 }
             })
 
-
         }
+
+      
 
     </script>
 

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Norden Brokers - Inicio</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/feather/feather.css">
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="css/vertical-layout-light/custom.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <script>
+    $(document).ready(function () {
+      $("html").get(0).style.setProperty('--positivo', "#010B38");
+      $("html").get(0).style.setProperty('--negativo', "#009bdc");
+    });
+  </script> -->
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/76e0757c77.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="mt-3">
+        <button onclick="genPDF()" class="btn btn-danger" style="display: block; margin: auto">Generar pdf</button>
+    </div>
+    <br>
+    <div id="testdiv">
+        <!-- PAG 1 -->
+        <div class="card mx-auto" style="height: 1780px">
+            <div class="card-body">
+                <div class="col-md-12 header-border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
+                            <p class="text-center p-2 mt-3">Presupuesto No28202 - 24/08/2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <h3>Estimado BERTALOT, JUAN SEBASTIAN</h3>
+                    <h4>Nos dirigimos a Ud. con la finalidad de informarle vuestra cotización para el seguro de su
+                        vehículo.</h4>
+                    <div class="row p-2">
+                        <div class="col-md-9 mx-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- item 1 -->
+                                    <h4 class="bg-primary p-2 text-white radius">Productor/Vendedor: <span
+                                            class="text-dark ml-2">Norden Brokers</span></h4>
+                                    <!-- item 2 -->
+                                    <h4 class="bg-primary p-2 text-white mt-2 radius">Datos del tomador:</h4>
+                                    <div class="row">
+                                        <div class="col-md-9 mx-auto">
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> Nombre: <span class="ml-2 text-dark">JUAN SEBASTIAN</span></h4>
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> Apellido: <span class="ml-2 text-dark">BERTALOT</span></h4>
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> DNI/CUIT: <span class="ml-2 text-dark"></span></h4>
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> Condición: <span class="ml-2 text-dark">CONSUMIDOR FINAL</span></h4>
+                                        </div>
+                                    </div>
+                                    <!-- item 3 -->
+                                    <h4 class="bg-primary p-2 text-white mt-2 radius">Datos del vehículo:</h4>
+                                    <div class="row">
+                                        <div class="col-md-9 mx-auto">
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> Marca: <span class="ml-2 text-dark">CHEVROLET</span></h4>
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> Modelo: <span class="ml-2 text-dark">ONIX 1.4 JOY BLACK L/19</span></h4>
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> Año: <span class="ml-2 text-dark">2020</span></h4>
+                                        </div>
+                                    </div>
+                                    <!-- item 4 -->
+                                    <h4 class="bg-primary p-2 text-white mt-2 radius">Zona de riesgo:</h4>
+                                    <div class="row">
+                                        <div class="col-md-9 mx-auto">
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i> Provincia: <span class="ml-2 text-dark">Buenos Aires</span></h4>
+                                            <h4 class="ml-1 text-primary"><i class="fas fa-angle-right"></i>Código postal: <span class="ml-2 text-dark">1602 - FLORIDA</span></h4>
+                                        </div>
+                                    </div>
+                                    <!-- item 5 -->
+                                    <h4 class="bg-primary p-2 text-white mt-2 radius">Forma de pago: <span
+                                            class="text-dark ml-2">Tarjeta de crédito</span></h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/logo-smg.svg" width="100%">
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Refacturacion: Mensual</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Plan de pago: 1 CUOTA/S</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Suma asegurada: $ 1.496.200</h4>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <!-- <table class="table">
+                                <thead>
+                                    <tr class="bg-primary text-white">
+                                        <th class="th-first">Cobertura</th>
+                                        <th class="text-right th-last">Costo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>RC6 C/X, SSN</td>
+                                        <td class="text-right">$3.507,72
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TS1 C/X</td>
+                                        <td class="text-right">$4.688,61
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table> -->
+                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span
+                                    class="float-right">Costo</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">RC6 C/X, SSN <span
+                                    class="float-right">$3.507,72</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">TS1 C/X<span class="float-right">$4.688,61</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/Sancor.png" width="100%">
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Refacturacion: Mensual</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Plan de pago: 1 CUOTA</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Suma asegurada: $ 1.395.000
+                            </h4>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span
+                                    class="float-right">Costo</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">AUTOMAX 1 – RESPONSABILIDAD CIVIL <span
+                                    class="float-right">$2.221,00</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">TODO RIESGO 14 (FRANQUICIA $ 30.000.-)<span
+                                    class="float-right">$10.238,00</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="images/sura.png" width="100%">
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Refacturacion: Mensual</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Plan de pago: 3 CUOTA/S</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="text-center p-2">Suma asegurada: $ 1.425.000</h4>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span
+                                    class="float-right">Costo</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">Resp.Civil-Robo/Incendio Total <span
+                                    class="float-right">$756,24</span></h4>
+                            <h4 class="border-bottom pb-3 ml-2 mr-2">Resp.Civil-Robo/Incendio Total y Parcial-Danos
+                                Totales por Accidente<span class="float-right">$1.000,64</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="text-center text-secondary">Calle Fantasma 1234 - Médano B (1122) - Malos Aires <br>
+                    Tel./ Fax: (99-77) 5533-1100 - zzz.demo-brokers.nrc
+                </p>
+                <p class="text-center mt-4">Página 1 de 5</p>
+            </footer>
+        </div>
+        <!-- FIN PAG 1 -->
+
+        <!-- PAG 2 -->
+        <div class="card mx-auto mt-3" style="height: 1780px">
+            <div class="card-body">
+                <div class="col-md-12 header-border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
+                            <p class="text-center p-2 mt-3">Presupuesto No28202 - 24/08/2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <img src="images/logo-smg.svg" class="ml-3" style="width: 250px">
+                    <div class="col-md-12">
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">RC6 C/X, SSN</h4>
+                        <h4 class="mt-2 p-2">Responsabilidad Civil</h4>
+                        <h4 class="mt-2 p-2">Remolque: 300 km totales</h4>
+                        <h4 class="mt-2 p-2">Asistencia Mecánica: 1 servicios mes / 6 servicios año</h4>
+                        <h4 class="mt-2 p-2">Inforuta</h4>
+                        <h4 class="mt-2 p-2">Asistencia Integral en caso de Siniestro</h4>
+                        <h4 class="mt-2 p-2">Extensión de la cobertura a Países Limítrofes
+                        </h4>
+                        <h4 class="mt-2 p-2">Depósito o Custodia hasta $ 300</h4>
+                        <h4 class="mt-2 p-2">Asistencia Penal 24 hs.</h4>
+                        <h4 class="mt-2 p-2">Conductor Profesional ante imposibilidad de conducir Asegurado</h4>
+                        <h4 class="mt-2 p-2">Emergencia Médica por Accidente (Traslado Sanitario)</h4>
+                        <h4 class="mt-2 p-2">Extracción del vehículo hasta $ 300</h4>
+                        <h4 class="mt-2 p-2">Abastecimiento de Combustible y/o Lubricante</h4>
+                        <h4 class="mt-2 p-2">Transmisión de Mensajes Urgentes
+                        </h4>
+                        <h4 class="mt-2 p-2">0810-3333-764 (SMG)</h4>
+                        <h4 class="mt-2 p-2">SMG 0 Km: Bonificación 20% escalonada (por antigüedad en Cía.)</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="bg-primary text-white p-3 mt-4 radius">TS1 C/X</h4>
+                        <h4 class="mt-2 p-2">Responsabilidad Civil Robo Total Incendio Total Remolque y Asistencia
+                            Mecánica (Sujeto a antigüedad vehículo)
+                            Inforuta Asistencia Integral en caso de Siniestro Gastos de Gestoría por Baja del Vehículo
+                            (RT) Extensión a Países
+                            Limítrofes Depósito o Custodia hasta $ 300 Gastos de Hotelería y Desplazamiento de
+                            beneficiarios $2500 Asistencia
+                            Penal 24 hs. Conductor Profesional ante imposibilidad de conducir Asegurado Emergencia
+                            Médica por Accidente
+                            (Traslado Sanitario) Extracción del vehículo hasta $ 300 Abastecimiento de Combustible y/o
+                            Lubricante Transmisión de
+                            Mensajes Urgentes 0810-3333-764 (SMG) SMG 0 Km: Plazo 1 año (h/ 3 meses de antigüedad al
+                            ingreso). Reposición a
+                            Nuevo. Cubiertas Sin Desgaste. Bonificación 10% escalonada (por antigüedad en Cía.)
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="text-center text-secondary">Calle Fantasma 1234 - Médano B (1122) - Malos Aires <br>
+                    Tel./ Fax: (99-77) 5533-1100 - zzz.demo-brokers.nrc
+                </p>
+                <p class="text-center mt-4">Página 2 de 5</p>
+            </footer>
+        </div>
+        <!-- FIN PAG 2 -->
+
+        <!-- PAG 3 -->
+        <div class="card mx-auto mt-3" style="height: 1780px">
+            <div class="card-body">
+                <div class="col-md-12 header-border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
+                            <p class="text-center p-2 mt-3">Presupuesto No28202 - 24/08/2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <img src="images/Sancor.png" class="ml-3" style="width: 250px">
+                    <div class="col-md-12">
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">AUTOMAX 1 – RESPONSABILIDAD CIVIL</h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Responsabilidad civil:</span> cobertura por
+                            reclamos a consecuencia de daños
+                            causados
+                            por el vehículo a cosas de terceros o
+                            personas sean estas transportadas o no transportadas, con un límite de $ 10.000.000.-</h4>
+                        <h4 class="mt-2 p-2">Esta cobertura Excluye Asistencia a las Personas y al Vehículo.</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="bg-primary text-white p-3 mt-4 radius">TODO RIESGO 14 (FRANQUICIA $ 30.000.-)</h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Responsabilidad civil:</span> cobertura por
+                            reclamos a consecuencia de daños
+                            causados por el vehículo a cosas de terceros o
+                            personas sean estas transportadas o no transportadas, con un límite de $ 10.000.000.-</h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Incendio</span> Parcial y/o Total.</h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Robo o Hurto</span> Parcial y/o Total.</h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Destrucción total.</span></h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Granizo, terremoto e inundación.</span> Sin
+                            Límite y Sin Deducible </h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Cristales.</span> Sin Límite y Sin
+                            Deducible.</h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">* Daños parciales al amparo del Robo
+                                Total</span> sin deducible.</h4>
+                        <h4 class="mt-2 p-2"><span class="text-secondary">» Daños parciales por accidente con una
+                                franquicia de $ 30.000.
+                            </span></h4>
+                        <h4 class="mt-2 p-2">* Auxilio mecánico y remolque las 24hs</h4>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <img src="images/sura.jpg" class="ml-3" style="width: 250px">
+                    <div class="col-md-12">
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total
+                        </h4>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="bg-primary text-white p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total y Parcial-Danos
+                            Totales por Accidente</h4>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="text-center text-secondary">Calle Fantasma 1234 - Médano B (1122) - Malos Aires <br>
+                    Tel./ Fax: (99-77) 5533-1100 - zzz.demo-brokers.nrc
+                </p>
+                <p class="text-center mt-4">Página 3 de 5</p>
+            </footer>
+        </div>
+        <!-- FIN PAG 3 -->
+
+        <!-- PAG 4 -->
+        <div class="card mx-auto mt-3" style="height: 1780px">
+            <div class="card-body">
+                <div class="col-md-12 header-border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
+                            <p class="text-center p-2 mt-3">Presupuesto No28202 - 24/08/2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <img src="images/Sancor.png" class="ml-3" style="width: 200px">
+                    <br>
+                    <div class="col-md-12">
+                        <h4 class="text-center mt-5">Beneficios Adicionales y Consideraciones</h4>
+                        <h4 class="mt-5"><span class="text-primary">Nota IMPORTANTE - Cobranza .</span> Le informamos
+                            que según la fecha de emisión y de inicio de vigencia de la póliza en
+                            cuestión, existe la posibilidad de que las dos primeras cuotas se debiten en forma conjunta,
+                            dependiendo a su vez del
+                            calendario de presentación de su tarjeta. <br>
+                            <i>Esta modalidad nos es ajena e impredecible por lo que cumplimos en anticiparles de esta
+                                posibilidad que puede a su
+                                vez no darse de esta forma en todos los casos.-</i>
+                        </h4>
+                        <h4 class="mt-5"><span class="text-primary">Póliza Electrónica</span>
+                        </h4>
+
+                        <h4 class="mt-4"><span class="text-primary">Cubiertas:</span>
+                            En la reposición se aplica un porcentaje de desgaste según kilometraje y estado de las
+                            cubiertas restantes.
+                            <br> <br>
+                            <i>Es importante se nos informe de cada cambio/compra de nuevas cubiertas para poder
+                                dejarlo
+                                asentado y considerarlo
+                                ante un siniestro</i>
+                        </h4>
+                        <h4 class="mt-4"><span class="text-primary">Robo/Hurto Parcial</span>
+                            Desde el segundo evento se aplica un deducible del 10% del siniestro (Mín. 1%-Máx. 3%
+                            del
+                            valor
+                            del 0km en vehículos Nacionales – Mín. 2% - Máx.6% el valor del 0km en vehículos
+                            Importados)
+                            » Excepto para
+                            cobertura Auto Premium Max.
+                        </h4>
+                        <h4 class="mt-4"><span class="text-primary">Equipo de rastreo y localización de vehículos
+                                (Lo
+                                Jack).</span>
+                            La contratación de la cobertura implica la instalación en forma
+                            obligatoria y a cargo de la aseguradora » para autos con Suma Asegurada mayor a $900.000
+                            y
+                            Pick Ups $1.000.000-
+                        </h4>
+                        <h4 class="mt-4"><span class="text-primary">Sistema CLEAS: </span>
+                            Cuando hay un siniestro entre dos vehículos asegurados en las compañías adheridas al
+                            sistema, entra
+                            en funcionamiento el CLEAS.
+                            <h4 class="mt-4">Esto significa que, en caso de que usted no sea el responsable del
+                                siniestro, Sancor
+                                Seguros se encargará de reparar el
+                                auto y hacer todos los trámites con la aseguradora del otro involucrado en el hecho.
+                            </h4>
+                            <h4 class="mt-4">Este sistema entra en funcionamiento en casos donde los daños sean
+                                únicamente materiales
+                                (siempre que los vehículos
+                                implicados sean autos, pick-ups, 4X4 o camiones de hasta 9 toneladas de peso bruto
+                                total) y el monto del siniestro no
+                                supere el determinado por la reglamentación vigente del sistema CLEAS.
+                            </h4>
+
+                        </h4>
+                        <h4 class="mt-4"><span class="text-primary">Lock out o tumulto popular:</span>
+                            cubre los daños producidos por alguno de estos hechos, de acuerdo a la cobertura
+                            contratada de daños totales o parciales por accidente.
+                        </h4>
+                        <h4 class="mt-4"><span class="text-primary">Asistencia legal:</span>
+                            en caso de siniestro, un equipo de profesionales analiza la situación para brindarte
+                            asesoramiento legal
+                            de acuerdo al caso.
+
+                        </h4>
+                        <h4 class="mt-4"><span class="text-primary">Asistencia en viaje -</span>
+                            <i>Servicio de asistencia en viaje al vehículo y a las personas.
+                            </i>
+                        </h4>
+                        <h4 class="mt-4">
+                            Con un llamado telefónico, el asegurado recibirá la solución a su problema, de
+                            acuerdo a las condiciones de póliza
+                        </h4>
+                        <h4 class="mt-4"><span class="text-primary">Reposición a 0km</span>
+                            Reposición por robo, hurto, incendio o accidente total, durante el primer año desde
+                            la fecha de factura de compra del
+                            vehículo 0km.
+                        </h4>
+
+                        <h4 class="mt-5"><span class="text-primary">Gastos de gestoría</span> <br> <br>
+                            En caso de robo o hurto total y destrucción total, cubre hasta $5.000 por este concepto.
+                        </h4>
+                        <h4 class="mt-5"><span class="text-primary">Extensión de coberturas a países limítrofes.</span>
+                        </h4>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <footer>
+                <p class="text-center text-secondary">Calle Fantasma 1234 - Médano B (1122) - Malos Aires <br>
+                    Tel./ Fax: (99-77) 5533-1100 - zzz.demo-brokers.nrc
+                </p>
+                <p class="text-center mt-4">Página 4 de 5</p>
+            </footer>
+        </div>
+        <!-- FIN PAG 4 -->
+
+        <!-- PAG 5-->
+        <div class="card mx-auto mt-3" style="height: 1780px">
+            <div class="card-body">
+                <div class="col-md-12 header-border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
+                            <p class="text-center p-2 mt-3">Presupuesto No28202 - 24/08/2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <div class="col-md-12">
+                        <h4 class="mt-5"><span class="text-primary">Segunda Opinión Médica
+                            </span>
+                            <h4 class="mt-4">Se brinda la posibilidad de coordinarla, en caso de enfermedades graves y/o
+                                intervenciones quirúrgicas de alta
+                                complejidad.</h4>
+                            <h4 class="mt-4">Indemniza el 100% de la suma asegurada cuando, a causa de accidentes, la
+                                destrucción del vehículo supere el 80%.</h4>
+                            <h4 class="mt-4">En caso de siniestro, un equipo de profesionales analiza la situación y
+                                para brindarle asesoramiento legal de acuerdo al
+                                caso.</h4>
+                        </h4>
+
+                        <h4 class="mt-5"><span class="text-primary"><u>Accidentes Personales Familiares</u>
+                            </span>
+                            <h4 class="mt-4">Incluye una póliza específica que cubre al titular y a los familiares
+                                transportados hasta el 3er grado de
+                                consanguinidad/afinidad, en caso de accidente con el vehículo asegurado.</h4>
+                            <h4 class="mt-4">
+                                <ul>
+                                    <li>Muerte Accidental $ 275.000-
+                                    </li>
+                                    <li>
+                                        Invalidez Total y/o Parcial Permanente por Accidente $ 275.000-
+                                    </li>
+                                    <li>
+                                        Asistencia Médica Farmacéutica $ 275.000-
+                                    </li>
+                                </ul>
+                            </h4>
+                        </h4>
+
+                        <h4 class="mt-4"><i><span class="text-primary">"Llamando al Doctor"</span>, un consultorio
+                                virtual que ofrece atención médica calificada e inmediata por videollamada, en
+                                cualquier momento y desde cualquier lugar del mundo.</i>
+                        </h4>
+                        <h4 class="mt-4"><i>Este beneficio se otorgará de manera gratuita en pólizas de Autos y Pick Ups
+                                de uso particular con coberturas de
+                                Terceros Completo Premium (Auto Premium Max) y Todo Riesgo</i>
+                        </h4>
+                        <h5 class="mt-4">Recuerde que el robo o hurto de las tazas de ruedas, tapas del radiador, del
+                            tanque de combustible, escobillas y brazos limpiaparabrisas, espejos e
+                            insignias exteriores y herramientas, y los equipos reproductores de sonidos y/o similares,
+                            formen o no parte del equipo original de fábrica, no se
+                            encuentran cubiertos en ninguna de las opciones. Solo al amparo del robo/hurto total.
+                        </h5>
+                        <h4 class="mt-4"><u>IMPORTANTE:</u> El importe presupuestado es correspondiente a la 1* cuota,
+                            pudiendo
+                            variar en las próximas
+                            facturaciones por: 1) Aumento de Tarifa en la aseguradora, 2) Actualización de la suma
+                            asegurada – valor- del
+                            vehículo, según variación del valor en plaza.
+                        </h4>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <footer>
+                <p class="text-center text-secondary">Calle Fantasma 1234 - Médano B (1122) - Malos Aires <br>
+                    Tel./ Fax: (99-77) 5533-1100 - zzz.demo-brokers.nrc
+                </p>
+                <p class="text-center mt-4">Página 5 de 5</p>
+            </footer>
+        </div>
+        <!-- FIN PAG 5 -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <script src="js/Chart.roundedBarCharts.js"></script>
+    <script src="js/button-tables.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <!-- End custom js for this page-->
+
+    <script>
+        $(document).ready(function () {
+            $('#table_id').DataTable({
+                language: {
+                    url: "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json",
+                },
+            });
+        });
+    </script>
+    <script>
+
+        function genPDF() {
+
+            html2canvas($('#testdiv'), {
+                onrendered: function (canvas) {
+
+                    var imgData = canvas.toDataURL('image/jpg');
+                    var imgWidth = 210;
+                    var pageHeight = 295;
+                    var imgHeight = canvas.height * imgWidth / canvas.width;
+                    var heightLeft = imgHeight;
+                    var doc = new jsPDF('p', 'mm', 'a4');
+                    var position = 0;
+
+                    doc.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+
+                    while (heightLeft >= 0) {
+                        position = heightLeft - imgHeight;
+                        doc.addPage();
+                        doc.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                        heightLeft -= pageHeight;
+                    }
+                    doc.save('presupuesto-1-2.pdf');
+
+                }
+            })
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
