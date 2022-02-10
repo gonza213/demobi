@@ -10488,10 +10488,10 @@ pre code {
 .tt-hint {
   display: block;
   width: 100%;
-  height: 2.875rem;
-  padding: 0.875rem 1.375rem;
-  font-size: 0.875rem;
-  font-weight: 400;
+  height: 2.075rem;
+  padding: 0.375rem 1.075rem;
+  font-size: 0.275rem;
+  font-weight: 200;
   line-height: 1;
   color: #495057;
   background-color: #ffffff;
@@ -11040,14 +11040,14 @@ textarea.is-invalid.tt-hint {
 
 .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard > .actions a {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   color: #1F1F1F;
   text-align: center;
   vertical-align: middle;
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.875rem 1.5rem;
+  padding: 0.675rem 0.75rem;
   font-size: 0.875rem;
   line-height: 1;
   border-radius: 0.1875rem;
@@ -13792,6 +13792,7 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid #e3e3e3;
   border-radius: 20px;
+  width: 100%;
 }
 
 .card > hr {
@@ -13824,7 +13825,7 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0.45rem;
 }
 
 .card-title {
@@ -30610,6 +30611,14 @@ div.tagsinput span.tag a {
   left: 30px;
 }
 
+.min-space-top{
+  margin-top: -20px !important;
+}
+.min-space-table td{
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
 
 @media (max-width: 991px) {
   #settings-trigger {
@@ -30628,60 +30637,60 @@ input:focus, select:focus, textarea:focus{
 
 
 @media (min-width: 992px) {
-  .tr{
+  .tr-flotante{
     margin-left: -150px; 
     background: #fff; 
     width: 150px; 
     position: absolute; 
-    padding: 5px; 
-    margin-top: 5px;
+    padding-top: 2px; 
+    padding-bottom: 2px; 
     border-radius: 15px;
   }
-  .tr:hover{
+  .tr-flotante:hover{
     background: var(--gris-negativo); 
     color: white;
   }
   
-    .tr-2{
+    .tr-flotante-grupo{
     margin-left: -220px; 
     background: #fff; 
     width: 220px; 
     position: absolute; 
-    padding: 5px; 
-    margin-top: 5px;
+    padding-top: 2px; 
+    padding-bottom: 2px; 
     border-radius: 15px;
   }
-  .tr-2:hover{
+  .tr-flotante-grupo:hover{
     background: var(--gris-negativo); 
     color: white;
   }
 }
 
 @media (max-width: 992px) {
-  .tr{
+  .tr-flotante{
     background: var(--negativo); 
     position: absolute; 
     margin-left: -120px; 
-    padding: 5px; 
-    margin-top: 5px;
+    padding-top: 2px; 
+    padding-bottom: 2px; 
     border-radius: 15px;
     width: 120px;
   }
-  .tr:hover{
+  .tr-flotante:hover{
     background: var(--gris-negativo); 
     color: white;
   }
 
-  .tr-2{
+  .tr-flotante-grupo{
     background: var(--negativo); 
     position: absolute; 
     margin-left: -180px; 
-    padding: 5px; 
-    margin-top: 5px;
+    padding-top: 2px; 
+    padding-bottom: 2px; 
     border-radius: 15px;
     width: 180px;
   }
-  .tr-2:hover{
+  .tr-flotante-grupo:hover{
     background: var(--gris-negativo); 
     color: white;
   }
@@ -30746,6 +30755,8 @@ color: var(--positivo) !important;
 
 
 }
+
+
 
 
 

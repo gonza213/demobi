@@ -4,7 +4,7 @@ $(".tr-inicio").hover(
     var id = $(this).attr("idForm");
     $(this).append(
       $(
-        `<span class='tr'>... <a href='pages/inicio/cotizador-auto.html&id=${id}' title='Cotizador-automotor' class='btn btn-primary btn-sm float-right'><i class='fas fa-info-circle p-1 text-center'></i></a></span>`
+        `<span class='tr-flotante'>... <a href='pages/inicio/cotizador-auto.html&id=${id}' title='Cotizador-automotor' class='btn btn-primary btn-sm float-right'><i class='fas fa-info-circle p-1 text-center'></i></a></span>`
       )
     );
   },
@@ -19,7 +19,7 @@ $(".tr-asegurados").hover(
     $(this).append(
       $(
         //html
-        `<span class='tr-2'>... 
+        `<span class='tr-flotante-grupo'>... 
   
             <a href='pages/inicio/cotizador-auto.html&id=${id}' title='consultor' class='btn btn-primary w-25 btn-sm float-right mr-1'><i class='fas fa-info-circle p-1'></i></a>
           
@@ -59,7 +59,7 @@ $(".tr-pendiente").hover(
     // $(this).append($(`<span class='tr'>... <a href='pages/inicio/pendientes-de-emision-operaciones.html&id=${id}' title='Cotizador-automotor' class='btn btn-primary btn-sm'><i class='fas fa-info-circle p-1'></i></a></span>`));
     $(this).append(
       $(
-        `<span class='tr'>... <a href='pendientes-de-emision-operaciones.html' title='Pendientes' class='btn btn-primary btn-sm float-right mr-3'><i class='fas fa-info-circle p-1'></i></a></span>`
+        `<span class='tr-flotante'>... <a href='pendientes-de-emision-operaciones.html' title='Pendientes' class='btn btn-primary btn-sm float-right mr-3'><i class='fas fa-info-circle p-1'></i></a></span>`
       )
     );
   },
