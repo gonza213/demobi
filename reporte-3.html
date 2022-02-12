@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Reporte Presupuesto de Automotor</title>
+    <!-- plugins:css -->
+    <!-- <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css"> -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="css/vertical-layout-light/custom.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/76e0757c77.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="mt-3">
+        <button onclick="genPDF()" class="btn btn-danger" style="display: block; margin: auto">Generar pdf</button>
+    </div>
+    <br>
+    <div id="testdiv">
+        <!-- PAG 1 -->
+        <div class="card mx-auto" style="height: 1819px">
+            <div class="card-body">
+                <div class="col-md-12 header-border">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <!-- LOGO NORMAL -->
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
+                        <div class="col-md-7">
+                            <h1 class="text-center p-2 text-primary">Comparativo de costo ART
+                            </h1>
+                            <p class="text-center p-2 mt-3">ASOCIACION CIVIL SAN ISIDRO GOLF CLUB
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-5">
+                        <div class="row mx-auto">
+                            <div class="col-md-4 bg-primary p-3 text-white radius-left">
+                                <h4>Masa salarial</h4>
+                                <h4>Cantidad de cápitas</h4>
+                            </div>
+                            <div class="col-md-8 border border-primary p-3 text-primary radius-right">
+                                <h4>$908.188,37</h4>
+                                <h4>34</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mx-auto p-3 mt-2">
+                        <!-- HEADER -->
+                        <div class="col-md-3 bg-primary text-white p-0 radius-left">
+                            <h4 class="p-3 min-font">Compañia</h4>
+                        </div>
+                        <div class="col-md-1 bg-primary text-white p-0">
+                            <h4 class="p-3 min-font">Alicuota</h4>
+                        </div>
+                        <div class="col-md-2 bg-primary text-white p-0">
+                            <h4 class="p-3 min-font">Costo mensual</h4>
+                        </div>
+                        <div class="col-md-2 bg-primary text-white p-0">
+                            <h4 class="p-3 min-font">Costo anual</h4>
+                        </div>
+                        <div class="col-md-2 bg-primary text-white p-0">
+                            <h4 class="p-3 min-font">Ahorro mensual</h4>
+                        </div>
+                        <div class="col-md-2 bg-primary text-white p-0 radius-right">
+                            <h4 class="p-3 min-font text-right">Ahorro anual</h4>
+                        </div>
+                        <!-- FIN HEADER -->
+                        <!-- FILA 1 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">ACTUAL</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">2,90%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$28.554,35</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$342.652,22</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">-</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">-</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 1 -->
+                        <!-- FILA 2 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">ASOCIART S.A.
+                                ASEGURADORA DE
+                                RIESGOS DEL TRABAJO</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">0,00%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$0,00</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$0,00</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">-</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">-</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 2 -->
+                        <!-- FILA 3 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">EXPERTA S.A.</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">3,88%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$38.196,28</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$458.355,41</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">-$9.641,93</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">-$115.703,20</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 3 -->
+                        <!-- FILA 4 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">LA SEGUNDA
+                                ASEGURADORA DE
+                                RIESGOS DEL
+                                TRABAJO SOCIEDAD
+                                A.</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">0,00%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$0,00</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$0,00</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">-</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">-</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 4 -->
+                        <!-- FILA 5 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">SWISS MEDICAL ART
+                                SA</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">4,00%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$39.376,93</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$472.523,15</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">-$10.822,58</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">-$129.870,94</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 5 -->
+                        <!-- FILA 6 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">PREVENCION
+                                ASEGURADORA DE
+                                RIESGOS DEL
+                                TRABAJO S.A.</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">3,88%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$38.196,28</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$458.355,41</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">-$9.641,93</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">-$115.703,20</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 6 -->
+                        <!-- FILA 7 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">PROVINCIA
+                                ASEGURADORA DE
+                                RIESGOS DEL
+                                TRABAJO S.A.</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">2,32%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$22.847,90</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$274.174,81</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$5.706,45</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">$68.477,40</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 7 -->
+                        <!-- FILA 8 -->
+                        <div class="col-md-3 text-dark p-0 radius-left">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">OMINT
+                                ASEGURADORA DE
+                                RIESGOS DEL
+                                TRABAJO SA</h4>
+                        </div>
+                        <div class="col-md-1 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">2,32%</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$22.847,90</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$274.174,81</h4>
+                        </div>
+                        <div class="col-md-2 text-dark p-0">
+                            <h4 class="pt-2 pb-2 pl-3 min-font">$5.706,45</h4>
+                        </div>
+                        <div class="col-md-2 text-success p-0 radius-right">
+                            <h4 class="pt-2 pb-2 pr-2 min-font text-right">$68.477,40</h4>
+                        </div>
+                        <div class="mx-auto" style="border-top: 1px solid black; width: 99%"></div>
+                        <!-- FIN FILA 8 -->
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <p class="text-center text-secondary">Calle Fantasma 1234 - Médano B (1122) - Malos Aires <br>
+                    Tel./ Fax: (99-77) 5533-1100 - zzz.demo-brokers.nrc
+                </p>
+                <p class="text-center mt-4">Página 1 de 2</p>
+            </footer>
+        </div>
+        <!-- FIN PAG 1 -->
+
+        <!-- PAG 2 -->
+        <div class="card mx-auto" style="height: 1819px">
+            <div class="card-body">
+                <div class="col-md-12 header-border">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <!-- LOGO NORMAL -->
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
+                        <div class="col-md-7">
+                            <h1 class="text-center p-2 text-primary">Comparativo de costo ART
+                            </h1>
+                            <p class="text-center p-2 mt-3">ASOCIACION CIVIL SAN ISIDRO GOLF CLUB
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto mt-5">
+                    <!-- <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div> -->
+                    <div>
+                        <h4>Costo Mensual</h4>
+                    </div>
+                    <canvas id="sales-chart-reporte"></canvas>
+                </div>
+            </div>
+            <footer>
+                <p class="text-center text-secondary">Calle Fantasma 1234 - Médano B (1122) - Malos Aires <br>
+                    Tel./ Fax: (99-77) 5533-1100 - zzz.demo-brokers.nrc
+                </p>
+                <p class="text-center mt-4">Página 2 de 2</p>
+            </footer>
+        </div>
+        <!-- FIN PAG 2 -->
+
+    </div>
+    <!-- container-scroller -->
+
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <script src="js/Chart.roundedBarCharts.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <!-- <script src="js/html2canvas.js"></script> -->
+    <!-- End custom js for this page-->
+    <script>
+        (function ($) {
+            'use strict';
+            $(function () {
+                if ($("#sales-chart-reporte").length) {
+                    var SalesChartCanvas = $("#sales-chart-reporte").get(0).getContext("2d");
+                    var SalesChart = new Chart(SalesChartCanvas, {
+                        type: 'bar',
+                        data: {
+                            labels: ["ACTUAL", "ASOCIART S.A. ASEGURADORA DE RIESGOS DEL TRABAJO", "EXPERTA S.A.", "LA SEGUNDA ASEGURADORA DE RIESGOS DEL TRABAJO SOCIEDAD A.", "SWISS MEDICAL ART SA", "PREVENCION ASEGURADORA DE RIESGOS DEL TRABAJO S.A.", "PROVINCIA ASEGURADORA DE RIESGOS DEL TRABAJO S.A.", "OMINT ASEGURADORA DE RIESGOS DEL TRABAJO SA"],
+                            datasets: [{
+                                data: [28000, 0, 38000, 0, 39000, 38000, 23000, 23000],
+                                backgroundColor: ['#F41616', '#009bdc', '#009bdc', '#009bdc', '#009bdc', '#009bdc', '#009bdc', '#009bdc']
+                            },
+
+                            ]
+                        },
+                        options: {
+                            cornerRadius: 5,
+                            responsive: true,
+                            maintainAspectRatio: true,
+                            layout: {
+                                padding: {
+                                    left: 0,
+                                    right: 0,
+                                    top: 20,
+                                    bottom: 0
+                                }
+                            },
+                            scales: {
+                                yAxes: [{
+                                    display: true,
+                                    gridLines: {
+                                        display: true,
+                                        drawBorder: false,
+                                        color: "#F2F2F2"
+                                    },
+                                    ticks: {
+                                        display: true,
+                                        min: 0,
+                                        max: 40000,
+                                        callback: function (value, index, values) {
+                                            return value + '$';
+                                        },
+                                        autoSkip: true,
+                                        maxTicksLimit: 10,
+                                        fontColor: "#6C7383"
+                                    }
+                                }],
+                                xAxes: [{
+                                    stacked: false,
+                                    ticks: {
+                                        beginAtZero: true,
+                                        fontColor: "#6C7383"
+                                    },
+                                    gridLines: {
+                                        color: "rgba(0, 0, 0, 0)",
+                                        display: false
+                                    },
+                                    barPercentage: 1
+                                }]
+                            },
+                            legend: {
+                                display: false
+                            },
+                            elements: {
+                                point: {
+                                    radius: 0
+                                }
+                            }
+                        },
+                    });
+                    document.getElementById('sales-legend').innerHTML = SalesChart.generateLegend();
+                }
+            });
+        })(jQuery);
+    </script>
+
+
+    <script>
+
+        function genPDF() {
+
+            html2canvas(document.getElementById("testdiv"), {
+                onrendered: function (canvas) {
+
+                    var contentWidth = canvas.width;
+                    var contentHeight = canvas.height;
+
+                    // Una página de pdf muestra la altura del lienzo generado por la página html;
+                    var pageHeight = contentWidth / 592.28 * 841.89;
+                    // Altura de la página html sin pdf generado
+                    var leftHeight = contentHeight;
+                    // Desplazamiento de página
+                    var position = 0;
+                    // El tamaño del papel a4 [595.28,841.89], el ancho y la altura del lienzo generado por la página html en el pdf
+                    var imgWidth = 595.28;
+                    var imgHeight = 592.28 / contentWidth * contentHeight;
+
+                    var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+                    var pdf = new jsPDF('', 'pt', 'a4');
+
+                    // Hay dos alturas para distinguir, una es la altura real de la página html y la altura de la página que genera el pdf (841.89)
+                    // Cuando el contenido no excede el rango que se muestra en una página del pdf, no es necesario buscar
+                    if (leftHeight < pageHeight) {
+                        pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
+                    } else {
+                        while (leftHeight > 0) {
+                            pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
+                            leftHeight -= pageHeight;
+                            position -= 841.89;
+                            // Evita agregar páginas en blanco
+                            if (leftHeight > 0) {
+                                pdf.addPage();
+                            }
+                        }
+                    }
+
+                    // window.open(pdf.output('bloburl'), '_blank');
+
+                    //Se guarda el reporte en el servidor y luego se visualiza en otra solapa.
+                    var pdf = btoa(pdf.output());
+                    $.ajax({
+                        method: "POST",
+                        url: "inc/guardar.php",
+                        data: { data: pdf },
+                    }).done(function (data) {
+                        var reporte = data;
+                        localStorage.setItem('Reporte', reporte);
+                        alert('Reporte guardado')
+                        window.location = 'ver-reporte.html'
+                    });
+                }
+
+            })
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

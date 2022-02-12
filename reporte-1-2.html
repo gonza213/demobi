@@ -599,9 +599,11 @@
                         }
                     }
 
+                    // pdf.save()
+
                     // window.open(pdf.output('bloburl'), '_blank');
 
-                    //Se guarda el reporte en el servidor y luego se visualiza en otra solapa.
+                    // Se guarda el reporte en el servidor y luego se visualiza en otra solapa.
                     var pdf = btoa(pdf.output());
                     $.ajax({
                         method: "POST",

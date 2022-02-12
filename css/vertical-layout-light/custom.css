@@ -3,6 +3,11 @@
     border-bottom: 2px solid var(--negativo);
 }
 
+.header-border-2 {
+    height: 180px;
+    border-bottom: 2px solid var(--negativo);
+}
+
 .img-header {
     width: 300px;
     display: block;
@@ -62,3 +67,11 @@ li {
     
 }
 
+.bg-gris{
+    background: #b9b9b9
+}
+
+
+.min-font{
+    font-size: 16px !important;
+}

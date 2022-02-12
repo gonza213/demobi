@@ -252,6 +252,7 @@
       });
       document.getElementById('sales-legend').innerHTML = SalesChart.generateLegend();
     }
+   
     if ($("#sales-chart-dark").length) {
       var SalesChartCanvas = $("#sales-chart-dark").get(0).getContext("2d");
       var SalesChart = new Chart(SalesChartCanvas, {
