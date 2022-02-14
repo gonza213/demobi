@@ -469,6 +469,68 @@
 
 
     </script>
+    <script>
+        // Funcion de PDF de forma automatica
+        // (function ($) {
+        //     'use strict';
+        //     $(function () {
+
+        //         html2canvas(document.getElementById("testdiv"), {
+        //         onrendered: function (canvas) {
+
+        //             var contentWidth = canvas.width;
+        //             var contentHeight = canvas.height;
+
+        //             // Una página de pdf muestra la altura del lienzo generado por la página html;
+        //             var pageHeight = contentWidth / 592.28 * 841.89;
+        //             // Altura de la página html sin pdf generado
+        //             var leftHeight = contentHeight;
+        //             // Desplazamiento de página
+        //             var position = 0;
+        //             // El tamaño del papel a4 [595.28,841.89], el ancho y la altura del lienzo generado por la página html en el pdf
+        //             var imgWidth = 595.28;
+        //             var imgHeight = 592.28 / contentWidth * contentHeight;
+
+        //             var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+        //             var pdf = new jsPDF('', 'pt', 'a4');
+
+        //             // Hay dos alturas para distinguir, una es la altura real de la página html y la altura de la página que genera el pdf (841.89)
+        //             // Cuando el contenido no excede el rango que se muestra en una página del pdf, no es necesario buscar
+        //             if (leftHeight < pageHeight) {
+        //                 pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
+        //             } else {
+        //                 while (leftHeight > 0) {
+        //                     pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
+        //                     leftHeight -= pageHeight;
+        //                     position -= 841.89;
+        //                     // Evita agregar páginas en blanco
+        //                     if (leftHeight > 0) {
+        //                         pdf.addPage();
+        //                     }
+        //                 }
+        //             }
+
+        //             // window.open(pdf.output('bloburl'), '_blank');
+
+        //             //Se guarda el reporte en el servidor y luego se visualiza en otra solapa.
+        //             var pdf = btoa(pdf.output());
+        //             $.ajax({
+        //                 method: "POST",
+        //                 url: "inc/guardar.php",
+        //                 data: { data: pdf },
+        //             }).done(function (data) {
+        //                 var reporte = data;
+        //                 localStorage.setItem('Reporte', reporte);
+        //                 alert('Reporte guardado')
+        //                 window.location = 'ver-reporte.html'
+        //             });
+        //         }
+
+        //     })
+        //     });
+        // })(jQuery);
+    </script>
 
 
 </body>
