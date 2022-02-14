@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Reporte Presupuesto de Automotor</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css"> -->
     <!-- endinject -->
+
     <!-- inject:css -->
     <link rel="stylesheet" href="css/vertical-layout-light/style.css">
     <link rel="stylesheet" href="css/vertical-layout-light/custom.css">
@@ -34,8 +35,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <!-- LOGO NORMAL -->
-                            <img src="images/logo.png" class="img-header p-2">      
-                         </div>
+                            <img src="images/logo.png" class="img-header p-2">
+                        </div>
                         <div class="col-md-6">
                             <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
                             <p class="text-center p-2 mt-3">Presupuesto No28202 - 24/08/2021</p>
@@ -46,39 +47,53 @@
                     <h3>Estimado BERTALOT, JUAN SEBASTIAN</h3>
                     <h4>Nos dirigimos a Ud. con la finalidad de informarle vuestra cotización para el seguro de su
                         vehículo.</h4>
-                    <table class="table mt-4">
-                        <tbody>
-                            <tr>
-                                <td class="border bg-primary text-white">Productor/Vendedor</td>
-                                <td class="text-white td-border td-ancho">NORDEN BROKERS S.A.
-                                </td>
-                                <td class="border bg-primary text-white">Provincia</td>
-                                <td class="text-white td-border">Buenos Aires</td>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border bg-primary text-white">Marca</td>
-                                <td class=" text-white td-border td-ancho">CHEVROLET</td>
-                                <td class="border bg-primary text-white">Código postal</td>
-                                <td class="text-white td-border">1602 - FLORIDA</td>
-                            </tr>
-                            <tr>
-                                <td class="border bg-primary text-white">Modelo</td>
-                                <td class="text-white td-border td-ancho">ONIX 1.4 JOY BLACK L/19 </td>
-                                <td class="border bg-primary text-white">Forma de pago</td>
-                                <td class="text-white td-border">Tarjeta de crédito
-                                </td>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border bg-primary text-white">Año</td>
-                                <td class="text-white td-border td-ancho">2020</td>
-                                <td class="border bg-primary text-white">Tipo IVA</td>
-                                <td class="text-white td-border">CONSUMIDOR FINAL
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+
+                            <!-- item 2 -->
+                            <h4 class="border border-primary p-2 text-primary mt-2 radius">Datos del tomador:</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="ml-3 text-primary mt-1"><i class="fas fa-angle-right"></i> Nombre / Razón
+                                        social: <span class="ml-2 text-dark">BERTALOT, JUAN SEBASTIAN</span></h4>
+                                    <h4 class="ml-3 text-primary mt-3"><i class="fas fa-angle-right"></i> Condición:
+                                        <span class="ml-2 text-dark">CONSUMIDOR FINAL</span>
+                                    </h4>
+                                    <h4 class="ml-3 text-primary mt-3"><i class="fas fa-angle-right"></i>
+                                        Productor/Vendedor: <span class="ml-2 text-dark">Norden Brokers</span></h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="ml-3 text-primary mt-1"><i class="fas fa-angle-right"></i> DNI/CUIT:
+                                        <span class="ml-2 text-dark"></span>
+                                    </h4>
+                                    <h4 class="ml-3 text-primary mt-3"><i class="fas fa-angle-right"></i> Forma de pago:
+                                        <span class="ml-2 text-dark">Tarjeta de crédito</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <h4 class="border border-primary p-2 text-primary mt-2 radius">Datos del vehículo:</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="ml-3 text-primary mt-1"><i class="fas fa-angle-right"></i> Año:
+                                        <span class="ml-2 text-dark">2021</span>
+                                        <i class="fas fa-angle-right ml-5"></i> Marca:
+                                        <span class="ml-2 text-dark">CHEVROLET</span>
+                                    </h4>
+                                    <h4 class="ml-3 text-primary mt-3"><i class="fas fa-angle-right"></i> Provincia:
+                                        <span class="ml-2 text-dark">Buenos Aires</span>
+                                    </h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="ml-3 text-primary mt-1"><i class="fas fa-angle-right"></i> Modelo: <span
+                                            class="ml-2 text-dark">ONIX 1.4 JOY BLACK L/19</span></h4>
+                                    <h4 class="ml-3 text-primary mt-3"><i class="fas fa-angle-right"></i> Código postal: <span
+                                            class="ml-2 text-dark">1602 - FLORIDA</span></h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-12 mt-5">
                     <div class="row">
@@ -98,7 +113,7 @@
                         <div class="col-md-12 mt-3">
                             <!-- <table class="table">
                                 <thead>
-                                    <tr class="bg-primary text-white">
+                                    <tr class="border border-primary text-primary">
                                         <th class="th-first">Cobertura</th>
                                         <th class="text-right th-last">Costo</th>
                                     </tr>
@@ -117,7 +132,7 @@
 
                                 </tbody>
                             </table> -->
-                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span
+                            <h4 class="border border-primary text-primary p-3 radius">Cobertura <span
                                     class="float-right">Costo</span></h4>
                             <h4 class="border-bottom pb-3 ml-2 mr-2">RC6 C/X, SSN <span
                                     class="float-right">$3.507,72</span></h4>
@@ -130,7 +145,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <!-- LOGO NORMAL SANCOR -->
-                            <img src="images/Sancor.png" width="100%">                       
+                            <img src="images/Sancor.png" width="100%">
                         </div>
                         <div class="col-md-3">
                             <h4 class="text-center p-2">Refacturacion: Mensual</h4>
@@ -143,7 +158,7 @@
                             </h4>
                         </div>
                         <div class="col-md-12 mt-3">
-                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span
+                            <h4 class="border border-primary text-primary p-3 radius">Cobertura <span
                                     class="float-right">Costo</span></h4>
                             <h4 class="border-bottom pb-3 ml-2 mr-2">AUTOMAX 1 – RESPONSABILIDAD CIVIL <span
                                     class="float-right">$2.221,00</span></h4>
@@ -168,7 +183,7 @@
                             <h4 class="text-center p-2">Suma asegurada: $ 1.425.000</h4>
                         </div>
                         <div class="col-md-12 mt-3">
-                            <h4 class="bg-primary text-white p-3 radius">Cobertura <span
+                            <h4 class="border border-primary text-primary p-3 radius">Cobertura <span
                                     class="float-right">Costo</span></h4>
                             <h4 class="border-bottom pb-3 ml-2 mr-2">Resp.Civil-Robo/Incendio Total <span
                                     class="float-right">$756,24</span></h4>
@@ -194,7 +209,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <!-- LOGO NORMAL -->
-                            <img src="images/logo.png" class="img-header p-2">                      
+                            <img src="images/logo.png" class="img-header p-2">
                         </div>
                         <div class="col-md-6">
                             <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
@@ -206,7 +221,7 @@
                     <!-- LOGO NORMAL MEDICAL -->
                     <img src="images/logo-smg.svg" class="ml-3" style="width: 250px">
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3 radius">RC6 C/X, SSN</h4>
+                        <h4 class="border border-primary text-primary p-3 mt-3 radius">RC6 C/X, SSN</h4>
                         <h4 class="mt-2 p-2">Responsabilidad Civil</h4>
                         <h4 class="mt-2 p-2">Remolque: 300 km totales</h4>
                         <h4 class="mt-2 p-2">Asistencia Mecánica: 1 servicios mes / 6 servicios año</h4>
@@ -226,7 +241,7 @@
                         <h4 class="mt-2 p-2">SMG 0 Km: Bonificación 20% escalonada (por antigüedad en Cía.)</h4>
                     </div>
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-4 radius">TS1 C/X</h4>
+                        <h4 class="border border-primary text-primary p-3 mt-4 radius">TS1 C/X</h4>
                         <h4 class="mt-2 p-2">Responsabilidad Civil Robo Total Incendio Total Remolque y Asistencia
                             Mecánica (Sujeto a antigüedad vehículo)
                             Inforuta Asistencia Integral en caso de Siniestro Gastos de Gestoría por Baja del Vehículo
@@ -270,9 +285,9 @@
                 </div>
                 <div class="col-md-12 mt-4">
                     <!-- LOGO NORMAL SANCOR -->
-                    <img src="images/Sancor.png" class="ml-3" style="width: 250px">               
+                    <img src="images/Sancor.png" class="ml-3" style="width: 250px">
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3 radius">AUTOMAX 1 – RESPONSABILIDAD CIVIL</h4>
+                        <h4 class="border border-primary text-primary p-3 mt-3 radius">AUTOMAX 1 – RESPONSABILIDAD CIVIL</h4>
                         <h4 class="mt-2 p-2"><span class="text-secondary">* Responsabilidad civil:</span> cobertura por
                             reclamos a consecuencia de daños
                             causados
@@ -281,7 +296,7 @@
                         <h4 class="mt-2 p-2">Esta cobertura Excluye Asistencia a las Personas y al Vehículo.</h4>
                     </div>
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-4 radius">TODO RIESGO 14 (FRANQUICIA $ 30.000.-)</h4>
+                        <h4 class="border border-primary text-primary p-3 mt-4 radius">TODO RIESGO 14 (FRANQUICIA $ 30.000.-)</h4>
                         <h4 class="mt-2 p-2"><span class="text-secondary">* Responsabilidad civil:</span> cobertura por
                             reclamos a consecuencia de daños
                             causados por el vehículo a cosas de terceros o
@@ -304,13 +319,12 @@
                 <div class="col-md-12 mt-5">
                     <!-- LOGO NORMAL SURA -->
                     <img src="images/sura.jpg" class="ml-3" style="width: 250px">
-                    
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total
+                        <h4 class="border border-primary text-primary p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total
                         </h4>
                     </div>
                     <div class="col-md-12">
-                        <h4 class="bg-primary text-white p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total y Parcial-Danos
+                        <h4 class="border border-primary text-primary p-3 mt-3 radius">Resp.Civil-Robo/Incendio Total y Parcial-Danos
                             Totales por Accidente</h4>
                     </div>
                 </div>
@@ -331,7 +345,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <!-- LOGO NORMAL -->
-                            <img src="images/logo.png" class="img-header p-2">                  
+                            <img src="images/logo.png" class="img-header p-2">
                         </div>
                         <div class="col-md-6">
                             <h1 class="text-center p-2 text-primary">Presupuesto Automotor</h1>
@@ -536,9 +550,11 @@
     <!-- plugins:js -->
     <script src="vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
+    <!-- Plugin js for this page -->
     <script src="js/jspdf.min.js"></script>
     <!-- <script src="js/html2canvas.js"></script> -->
     <!-- End custom js for this page-->
+
 
     <script>
 
@@ -580,8 +596,6 @@
                         }
                     }
 
-
-                    //Se abre el reporte en otra ventana
                     // window.open(pdf.output('bloburl'), '_blank');
 
                     //Se guarda el reporte en el servidor y luego se visualiza en otra solapa.
@@ -603,8 +617,68 @@
         }
 
 
+    </script>
+    <script>
+        // Funcion de PDF de forma automatica
+        // (function ($) {
+        //     'use strict';
+        //     $(function () {
 
+        //         html2canvas(document.getElementById("testdiv"), {
+        //         onrendered: function (canvas) {
 
+        //             var contentWidth = canvas.width;
+        //             var contentHeight = canvas.height;
+
+        //             // Una página de pdf muestra la altura del lienzo generado por la página html;
+        //             var pageHeight = contentWidth / 592.28 * 841.89;
+        //             // Altura de la página html sin pdf generado
+        //             var leftHeight = contentHeight;
+        //             // Desplazamiento de página
+        //             var position = 0;
+        //             // El tamaño del papel a4 [595.28,841.89], el ancho y la altura del lienzo generado por la página html en el pdf
+        //             var imgWidth = 595.28;
+        //             var imgHeight = 592.28 / contentWidth * contentHeight;
+
+        //             var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+        //             var pdf = new jsPDF('', 'pt', 'a4');
+
+        //             // Hay dos alturas para distinguir, una es la altura real de la página html y la altura de la página que genera el pdf (841.89)
+        //             // Cuando el contenido no excede el rango que se muestra en una página del pdf, no es necesario buscar
+        //             if (leftHeight < pageHeight) {
+        //                 pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
+        //             } else {
+        //                 while (leftHeight > 0) {
+        //                     pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
+        //                     leftHeight -= pageHeight;
+        //                     position -= 841.89;
+        //                     // Evita agregar páginas en blanco
+        //                     if (leftHeight > 0) {
+        //                         pdf.addPage();
+        //                     }
+        //                 }
+        //             }
+
+        //             // window.open(pdf.output('bloburl'), '_blank');
+
+        //             //Se guarda el reporte en el servidor y luego se visualiza en otra solapa.
+        //             var pdf = btoa(pdf.output());
+        //             $.ajax({
+        //                 method: "POST",
+        //                 url: "inc/guardar.php",
+        //                 data: { data: pdf },
+        //             }).done(function (data) {
+        //                 var reporte = data;
+        //                 localStorage.setItem('Reporte', reporte);
+        //                 alert('Reporte guardado')
+        //                 window.location = 'ver-reporte.html'
+        //             });
+        //         }
+
+        //     })
+        //     });
+        // })(jQuery);
     </script>
 
 
